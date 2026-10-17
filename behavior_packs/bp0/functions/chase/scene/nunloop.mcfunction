@@ -1,10 +1,10 @@
 #Scene 2 nunchuk
 
 #play animation
-execute @e[type=cyd:nunchuck_throw,c=1] ~ ~ ~ execute @e[type=cyd:nunchuck_throw] ~ ~ ~ playanimation @e[type=cyd:nunchuck_throw] trigger
+execute as @e[type=cyd:nunchuck_throw,c=1] at @s as @e[type=cyd:nunchuck_throw] at @s run playanimation @e[type=cyd:nunchuck_throw] trigger
 
 #text
-execute @e[type=cyd:nunchuck_throw,c=1,tag=!used] ~ ~ ~ function missions/dialogue/chase/scene2p1
+execute as @e[type=cyd:nunchuck_throw,c=1,tag=!used] at @s run function missions/dialogue/chase/scene2p1
 
 #tag used
-execute @e[type=cyd:nunchuck_throw,c=1,tag=!used] ~ ~ ~ execute @e[type=cyd:nunchuck_throw] ~ ~ ~ tag @s add used
+execute as @e[type=cyd:nunchuck_throw,c=1,tag=!used] at @s as @e[type=cyd:nunchuck_throw] at @s run tag @s add used

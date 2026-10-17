@@ -1,7 +1,7 @@
 #machine unlocks
-execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:lair_teleporter] evt:unlock
-execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:collectable_container] evt:unlock
-execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:vehicle_container] evt:unlock
+execute as @e[type=cyd:system_storage] at @s run event entity @e[type=cyd:lair_teleporter] evt:unlock
+execute as @e[type=cyd:system_storage] at @s run event entity @e[type=cyd:collectable_container] evt:unlock
+execute as @e[type=cyd:system_storage] at @s run event entity @e[type=cyd:vehicle_container] evt:unlock
 tag @a add completedstk
 tag @a add completedchase
 tag @a add completedkun
@@ -55,17 +55,17 @@ tag @e[type=cyd:collectible_storage] add nunchuck
 tag @e[type=cyd:collectible_storage] add sven
 tag @e[type=cyd:collectible_storage] add flying
 #minion summons*9
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
-execute @e[type=cyd:system_storage] ~ ~ ~ execute @s ~ ~ ~ summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
+execute as @e[type=cyd:system_storage] at @s at @s run summon cyd:minion_costume
 #remove barriers
-fill -167 55 1040 -167 54 1041 air 0 replace barrier
+fill -167 55 1040 -167 54 1041 air [] replace barrier
 #give players all the things they need/want + tags
 give @a cyd:banana 64
 give @a cyd:evil_o_matic
@@ -85,9 +85,9 @@ give @a cyd:holo_map
 #force playercount
 event entity @e[type=cyd:system_storage] evt:rm_ignited
 #remove tutorial stuff
-execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:trigger_tutorial] evt:despawn
-execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:secret_tutorial] evt:despawn
-execute @e[type=cyd:system_storage] ~ ~ ~ fill -213 52 1048 -229 57 1052 air 0 replace fire
+execute as @e[type=cyd:system_storage] at @s run event entity @e[type=cyd:trigger_tutorial] evt:despawn
+execute as @e[type=cyd:system_storage] at @s run event entity @e[type=cyd:secret_tutorial] evt:despawn
+execute as @e[type=cyd:system_storage] at @s run fill -213 52 1048 -229 57 1052 air [] replace fire
 #sewer tp entity
 summon cyd:sewer_tp -231 57 1035
 
@@ -96,10 +96,10 @@ tag @a add sandbox
 
 #kill progress bar
 kill @e[type=cyd:mission_progress_bar]
-setblock -155 52 1041 air 0
+setblock -155 52 1041 air []
 
 
 #remove villian bar
-setblock -166 51 1033 air 0
+setblock -166 51 1033 air []
 fill -166 53 1037 -166 55 1035 air
 kill @e[type=cyd:villain_o_meter]

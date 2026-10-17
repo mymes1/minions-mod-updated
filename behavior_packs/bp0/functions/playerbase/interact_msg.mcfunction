@@ -1,1 +1,1 @@
-execute @s[family=lair_unlocked] ~ ~ ~ titleraw @a[r=4] actionbar {"rawtext":[{"translate":"lair.buttons"}]}
+execute as @s[family=lair_unlocked] at @s run titleraw @a[r=4] actionbar {"rawtext":[{"translate":"lair.buttons"}]}

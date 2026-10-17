@@ -57,27 +57,27 @@
 #execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load lockbox -90 10 1627 270_degrees
 #execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load lockbox -90 10 1633 270_degrees
 
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -178 16 1710 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -195 16 1721 90_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -75 9 1673 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -75 9 1631 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot -203 16 1705 270_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot -137 22 1657 270_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot -111 22 1657 90_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -172 16 1653 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_security_bot_pathing -152 16 1657 270_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ summon cyd:employee_perkins -124.50 18.00 1658.50
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -178 16 1710 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -195 16 1721 90_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -75 9 1673 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -75 9 1631 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot -203 16 1705 270_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot -137 22 1657 270_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot -111 22 1657 90_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -172 16 1653 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_security_bot_pathing -152 16 1657 270_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run summon cyd:employee_perkins -124.50 18.00 1658.50
 
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_3_short -109 16 1687 90_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_2 -86 9 1649 270_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_1 -77 9 1646 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_3 -56 9 1666 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_2 -56 9 1673 180_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_1_pathing -157 16 1682 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_3 -159 16 1661 90_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_2_zigzag -169 16 1638 90_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_1_pathing -156 16 1638 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_3_rotate2 -176 16 1663 0_degrees
-execute @e[type=cyd:trigger_wk_system] ~ ~ ~ structure load bank_guard_2_rotate2 -168 16 1649 270_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_3_short -109 16 1687 90_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_2 -86 9 1649 270_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_1 -77 9 1646 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_3 -56 9 1666 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_2 -56 9 1673 180_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_1_pathing -157 16 1682 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_3 -159 16 1661 90_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_2_zigzag -169 16 1638 90_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_1_pathing -156 16 1638 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_3_rotate2 -176 16 1663 0_degrees
+execute as @e[type=cyd:trigger_wk_system] at @s run structure load bank_guard_2_rotate2 -168 16 1649 270_degrees
 
 

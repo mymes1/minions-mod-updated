@@ -3,8 +3,8 @@ playsound cyd.world.vnc_dialogue @a
 event entity @e[type=cyd:kun_master_chow] evt:scene0
 
 clear @a cyd:chi_nunchuk
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ kill @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30] 
-fill -206 24 1841 -196 24 1841 air 0
+execute as @e[type=cyd:kun_master_chow] at @s run kill @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30]
+fill -206 24 1841 -196 24 1841 air []
 
 
 effect @a invisibility 9999 255 true
@@ -25,5 +25,5 @@ setblock -188 32 1842 barrier
 
 
 
-execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s
+execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s
 tp @a -189 31 1842 facing -218 31 1842

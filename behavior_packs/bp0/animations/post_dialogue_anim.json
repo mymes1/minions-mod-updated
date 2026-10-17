@@ -92,7 +92,7 @@
       "loop": false,
       "timeline": {
         "1.9": [
-          "/execute @p[tag=!dev] ~ ~ ~ event entity @e[type=cyd:gru_bike] evt:despawn"
+          "/execute as @p[tag=!dev] at @s run event entity @e[type=cyd:gru_bike] evt:despawn"
         ],
         "2.0": [
           "/spawnpoint @a -159 51 1029",

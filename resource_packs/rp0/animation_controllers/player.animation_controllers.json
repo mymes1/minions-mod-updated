@@ -212,16 +212,16 @@
         "default": {
           "animations": [
             {
-              "first_person_attack_rotation": "(query.skin_id != 1 && query.is_item_equipped == 0 && query.get_equipped_item_name(0) != 'chi_nunchuk')*0.5"
+              "first_person_attack_rotation": "(query.skin_id != 1 && query.is_item_equipped == 0 && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk'))*0.5"
             },
             {
-              "first_person_attack_rotation": "(query.skin_id != 1 && query.is_item_equipped == 1 && query.get_equipped_item_name(0) != 'chi_nunchuk')*0.3"
+              "first_person_attack_rotation": "(query.skin_id != 1 && query.is_item_equipped == 1 && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk'))*0.3"
             },
             {
-              "first_person_attack_rotation": "(query.skin_id == 1 && query.is_item_equipped == 1 && query.get_equipped_item_name(0) != 'chi_nunchuk')*0.3"
+              "first_person_attack_rotation": "(query.skin_id == 1 && query.is_item_equipped == 1 && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk'))*0.3"
             },
             {
-              "first_person_attack_rotation_minion": "query.skin_id == 1 && query.is_item_equipped != 1  && query.get_equipped_item_name(0) != 'chi_nunchuk'"
+              "first_person_attack_rotation_minion": "query.skin_id == 1 && query.is_item_equipped != 1  && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ],
           "transitions": [
@@ -395,16 +395,16 @@
               "attack.positions": "variable.attack_time >= 0.0"
             },
             {
-              "attack.rotations": "variable.attack_time >= 0.0 && query.skin_id != 1 && query.get_equipped_item_name(0) != 'chi_nunchuk'"
+              "attack.rotations": "variable.attack_time >= 0.0 && query.skin_id != 1 && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             },
             {
-              "holo_attack_ctrl": "query.is_using_item && query.skin_id != 1 && query.get_equipped_item_name(0) == 'holo_map'"
+              "holo_attack_ctrl": "query.is_using_item && query.skin_id != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             },
             {
-              "attack.rotations_minion": "variable.attack_time >= 0.0 && query.skin_id == 1 && query.get_equipped_item_name(0) != 'chi_nunchuk' && query.get_equipped_item_name(0) != 'cheesegun' && query.get_equipped_item_name(0) != 'jamgun' && query.get_equipped_item_name(0) != 'plasma_jamgun' && query.get_equipped_item_name(0) != 'fartgrenade' && query.get_equipped_item_name(0) != 'slingshot'"
+              "attack.rotations_minion": "variable.attack_time >= 0.0 && query.skin_id == 1 && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk') && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade') && !query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot')"
             },
             {
-              "holo_attack_ctrl": "query.is_using_item && query.skin_id == 1 && query.get_equipped_item_name(0) == 'holo_map'"
+              "holo_attack_ctrl": "query.is_using_item && query.skin_id == 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             },
             {
               "shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"

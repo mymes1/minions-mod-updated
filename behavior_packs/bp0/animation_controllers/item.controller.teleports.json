@@ -6,46 +6,46 @@
         "default": {
           "transitions": [
             {
-              "teleport_1": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_01_gru_70s_home'"
+              "teleport_1": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_01_gru_70s_home')"
             },
             {
-              "teleport_2": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_02_airport'"
+              "teleport_2": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_02_airport')"
             },
             {
-              "teleport_3": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_03_wild_knuckles'"
+              "teleport_3": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_03_wild_knuckles')"
             },
             {
-              "teleport_4": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_04_chinatown'"
+              "teleport_4": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_04_chinatown')"
             },
             {
-              "teleport_5": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_05_elmacho_fortress'"
+              "teleport_5": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_05_elmacho_fortress')"
             },
             {
-              "teleport_6": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_06_gru_current_hometown'"
+              "teleport_6": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_06_gru_current_hometown')"
             },
             {
-              "teleport_7": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_07_bratt'"
+              "teleport_7": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_07_bratt')"
             },
             {
-              "teleport_8": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_08_gru_mansion'"
+              "teleport_8": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_08_gru_mansion')"
             },
             {
-              "teleport_9": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_09_vector'"
+              "teleport_9": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_09_vector')"
             },
             {
-              "teleport_10": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_10_recordshop'"
+              "teleport_10": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_10_recordshop')"
             },
             {
-              "teleport_11": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_11_chowsacupuncture'"
+              "teleport_11": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_11_chowsacupuncture')"
             },
             {
-              "teleport_12": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_12_bankofevil'"
+              "teleport_12": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_12_bankofevil')"
             },
             {
-              "teleport_13": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_13_playerlab'"
+              "teleport_13": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:teleport_icon_13_playerlab')"
             },
             {
-              "evil_o_matic": "query.is_using_item && query.get_equipped_item_name(0) == 'evil_o_matic'"
+              "evil_o_matic": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:evil_o_matic')"
             }
           ]
         },

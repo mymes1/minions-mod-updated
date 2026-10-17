@@ -10,7 +10,8 @@
     "component_groups": {
       "cyd:despawn": {
         "minecraft:instant_despawn": {}
-      }
+      },
+      "cyd:ignited": {}
     },
     "components": {
       "minecraft:health": {

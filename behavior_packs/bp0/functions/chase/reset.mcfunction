@@ -31,14 +31,14 @@ event entity @e[family=chasereset] evt:despawn
 kill @e[type=cyd:cart]
 kill @e[type=item]
 
-setblock 1180 76 -260 wooden_slab
+setblock 1180 76 -260 oak_slab
 fill 75 81 1788 68 80 1797 air
 fill 82 81 1792 95 80 1792 air
 
 setblock -35 76 1794 stone
 setblock -303 84 1827 stone
 
-execute @e[type=cyd:system_storage,c=1] ~ ~ ~ summon cyd:load_normal
+execute as @e[type=cyd:system_storage,c=1] at @s run summon cyd:load_normal
 
 
 

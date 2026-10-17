@@ -13,9 +13,9 @@
       "timeline": {
         "0.0": [
           "/function missions/dialogue/wk/wild_knuckles_0_1",
-          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s",
           "/function missions/cutscene/wk/scene_m4_01",
-          "/title @a title §2"
+          "/title @a title \u00a72"
         ],
         "6.0": [
           "/function missions/dialogue/wk/wild_knuckles_0_2"
@@ -31,24 +31,24 @@
         ],
         "30.0": [
           "/function missions/dialogue/wk/wild_knuckles_2",
-          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s",
           "/function missions/cutscene/wk/scene_m4_02"
         ],
         "36.0": [
           "/function missions/dialogue/wk/wild_knuckles_3",
-          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s",
           "/function missions/cutscene/wk/scene_m4_03"
         ],
         "42.0": [
           "/function missions/dialogue/wk/wild_knuckles_6_2",
-          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s",
           "/function missions/cutscene/wk/scene_m4_06"
         ],
         "48.0": [
           "/function playerbase/objectives/m4_2",
-          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute as @a at @s run playsound cyd.generic.scene_transition @s",
           "/function missions/cutscene/wk/scene_m4_complete_1",
-          "/title @a title §1"
+          "/title @a title \u00a71"
         ]
       },
       "animation_length": 48.1
@@ -167,8 +167,8 @@
           "/function playerbase/objectives/m4_12"
         ],
         "5.0": [
-          "/execute @e[type=cyd:safe_door_2] ~ ~ ~ playsound cyd.mission.bank.wk_drill @a[r=20]",
-          "/execute @e[x=-124.5,y=31.50,z=1581.50,r=1,c=1] ~ ~ ~ kill @e[type=cyd:item_godrays,c=1]",
+          "/execute as @e[type=cyd:safe_door_2] at @s run playsound cyd.mission.bank.wk_drill @a[r=20]",
+          "/execute as @e[x=-124.5,y=31.50,z=1581.50,r=1,c=1] at @s run kill @e[type=cyd:item_godrays,c=1]",
           "/summon cyd:item_godrays -124.50 31.50 1581.50"
         ],
         "11.0": [
@@ -290,7 +290,7 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-163,y=16,z=1701,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_4"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s as @p[x=-163,y=16,z=1701,r=5] at @s run event entity @e[type=cyd:wild_knuckles] evt:sid_4"
         ]
       },
       "animation_length": 0.2
@@ -299,7 +299,7 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-125,y=16,z=1718,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles,tag=mona] evt:sid_14"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s as @p[x=-125,y=16,z=1718,r=5] at @s run event entity @e[type=cyd:wild_knuckles,tag=mona] evt:sid_14"
         ]
       },
       "animation_length": 0.2
@@ -308,7 +308,7 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-163,y=16,z=1673,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_6"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s as @p[x=-163,y=16,z=1673,r=5] at @s run event entity @e[type=cyd:wild_knuckles] evt:sid_6"
         ]
       },
       "animation_length": 0.2
@@ -317,7 +317,7 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-82,y=9,z=1682,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_9"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s as @p[x=-82,y=9,z=1682,r=5] at @s run event entity @e[type=cyd:wild_knuckles] evt:sid_9"
         ]
       },
       "animation_length": 0.2
@@ -326,7 +326,7 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-71,y=9,z=1670,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles,tag=disguise] evt:sid_10"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s as @p[x=-71,y=9,z=1670,r=5] at @s run event entity @e[type=cyd:wild_knuckles,tag=disguise] evt:sid_10"
         ]
       },
       "animation_length": 0.2
@@ -418,7 +418,7 @@
       "loop": false,
       "timeline": {
         "0.0": [
-          "/execute @s[tag=!drill] ~ ~ ~ give @p cyd:drill",
+          "/execute as @s[tag=!drill] at @s run give @p cyd:drill",
           "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
           "/tag @e[type=cyd:wild_knuckles] add drill",
           "/tag @s add drill"
@@ -432,7 +432,7 @@
         "0.0": [
           "/give @p cyd:monalisa",
           "/kill @e[type=cyd:employee_perkins]",
-          "/execute @e[type=cyd:wk_guard_1_short,x=-109,y=16,z=1687] ~ ~ ~ kill @s",
+          "/execute as @e[type=cyd:wk_guard_1_short,x=-109,y=16,z=1687] at @s run kill @s",
           "/function playerbase/objectives/m4_13",
           "/kill @e[type=cyd:wk_security_bot,c=2]",
           "/event entity @e[family=laser] evt:mv_0",
@@ -479,7 +479,7 @@
       "loop": false,
       "timeline": {
         "0.0": [
-          "/execute @s[tag=!disguise] ~ ~ ~ give @p cyd:disguise",
+          "/execute as @s[tag=!disguise] at @s run give @p cyd:disguise",
           "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
           "/tag @e[type=cyd:wild_knuckles] add disguise",
           "/tag @s add disguise"
@@ -630,10 +630,10 @@
       "timeline": {
         "0.0": [
           "/playsound cyd.mission.bank.safe_laser @a[r=8]",
-          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ event entity @e[family=laser] evt:mv_1"
+          "/execute as @e[type=cyd:trigger_wk_system] at @s run event entity @e[family=laser] evt:mv_1"
         ],
         "4.16": [
-          "/execute @s ~ ~ ~ fill ^1 ^1 ^ ^-1 ^3 ^ air 0 replace barrier"
+          "/execute as @s at @s run fill ^1 ^1 ^ ^-1 ^3 ^ air [] replace barrier"
         ]
       },
       "animation_length": 5
@@ -645,7 +645,7 @@
           "/playsound cyd.mission.bank.safe_laser @a[r=8]"
         ],
         "4.16": [
-          "/execute @s ~ ~ ~ fill -165 18 1625 -162 20 1625 air 0 replace barrier"
+          "/execute as @s at @s run fill -165 18 1625 -162 20 1625 air [] replace barrier"
         ]
       },
       "animation_length": 5
@@ -657,7 +657,7 @@
           "/playsound cyd.mission.bank.door_open @a[r=8]"
         ],
         "0.3": [
-          "/execute @s ~ ~ ~ fill -142 16 1687 -142 18 1688 air 0 replace barrier"
+          "/execute as @s at @s run fill -142 16 1687 -142 18 1688 air [] replace barrier"
         ]
       },
       "animation_length": 3
@@ -669,7 +669,7 @@
           "/playsound cyd.mission.bank.door_open @a[r=8]"
         ],
         "0.3": [
-          "/execute @s ~ ~ ~ fill -142 16 1687 -142 18 1688 barrier 0 replace air"
+          "/execute as @s at @s run fill -142 16 1687 -142 18 1688 barrier [] replace air"
         ]
       },
       "animation_length": 3
@@ -681,7 +681,7 @@
           "/playsound cyd.mission.bank.door_open @a[r=8]"
         ],
         "0.3": [
-          "/execute @s ~ ~ ~ fill -163 16 1677 -164 18 1677 air 0 replace barrier"
+          "/execute as @s at @s run fill -163 16 1677 -164 18 1677 air [] replace barrier"
         ]
       },
       "animation_length": 3
@@ -693,7 +693,7 @@
           "/playsound cyd.mission.bank.door_open @a[r=8]"
         ],
         "0.3": [
-          "/execute @s ~ ~ ~ fill -163 16 1677 -164 18 1677 barrier 0 replace air"
+          "/execute as @s at @s run fill -163 16 1677 -164 18 1677 barrier [] replace air"
         ]
       },
       "animation_length": 3
@@ -702,7 +702,7 @@
       "loop": false,
       "timeline": {
         "2.65": [
-          "/execute @s ~ ~ ~ fill -124 16 1733 -126 20 1733 air 0 replace barrier",
+          "/execute as @s at @s run fill -124 16 1733 -126 20 1733 air [] replace barrier",
           "/playsound cyd.mission.bank.bank_eye_scanner_door @a[r=8]",
           "/fill -107 16 1689 -107 18 1686 barrier"
         ]

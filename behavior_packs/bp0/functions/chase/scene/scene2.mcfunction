@@ -14,4 +14,4 @@
 #execute @e[type=cyd:nunchuck_throw,c=1,tag=!used] ~ ~ ~ execute @p[tag=racing] ~ ~ ~ execute @s[x=-182,r=5] ~ ~ ~ function missions/dialogue/chase/scene2p1
 
 #tag used
-execute @e[type=cyd:nunchuck_throw,c=1,tag=!used] ~ ~ ~ execute @p[tag=racing] ~ ~ ~ execute @s[x=-182,r=5] ~ ~ ~ execute @e[type=cyd:nunchuck_throw] ~ ~ ~ tag @s add used
+execute as @e[type=cyd:nunchuck_throw,c=1,tag=!used] at @s as @p[tag=racing] at @s as @s[x=-182,r=5] at @s as @e[type=cyd:nunchuck_throw] at @s run tag @s add used

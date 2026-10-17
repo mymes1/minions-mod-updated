@@ -335,7 +335,7 @@
     },
     "sf_14_top": {
       "textures": "textures/blocks/sf_14_top"
-	  },
+    },
     "sf_15": {
       "textures": "textures/blocks/sf_15"
     },
@@ -362,10 +362,10 @@
     },
     "sf_21": {
       "textures": "textures/blocks/sf_21"
-	},
+    },
     "sf_21_top": {
       "textures": "textures/blocks/sf_21_top"
-	},
+    },
     "pier_12_1": {
       "textures": "textures/blocks/pier_12_1"
     },
@@ -640,18 +640,7 @@
       "textures": "textures/blocks/orphanage_5"
     },
     "vector_fortress_1": {
-      "textures": {
-        "variations": [
-          {
-            "path": "textures/blocks/vector_fortress_1",
-            "weight": 5
-          },
-          {
-            "path": "textures/blocks/vector_fortress_1_2",
-            "weight": 1
-          }
-        ]
-      }
+      "textures": "textures/blocks/vector_fortress_1"
     },
     "vector_fortress_2": {
       "textures": "textures/blocks/vector_fortress_2"
@@ -678,28 +667,10 @@
       "textures": "textures/blocks/vector_fortress_interior_7"
     },
     "vector_fortress_interior_8": {
-      "textures": {
-        "variations": [
-          {
-            "path": "textures/blocks/vector_fortress_interior_8",
-            "weight": 1
-          }
-        ]
-      }
+      "textures": "textures/blocks/vector_fortress_interior_8"
     },
     "vector_fortress_interior_8_up": {
-      "textures": {
-        "variations": [
-          {
-            "path": "textures/blocks/vector_fortress_interior_8_up",
-            "weight": 1
-          },
-          {
-            "path": "textures/blocks/vector_fortress_interior_8_2_up",
-            "weight": 10
-          }
-        ]
-      }
+      "textures": "textures/blocks/vector_fortress_interior_8_up"
     },
     "vector_fortress_interior_9": {
       "textures": "textures/blocks/vector_fortress_interior_9"
@@ -723,14 +694,7 @@
       "textures": "textures/blocks/vector_fortress_interior_16"
     },
     "vector_fortress_interior_15": {
-      "textures": {
-        "variations": [
-          {
-            "path": "textures/blocks/vector_fortress_interior_15",
-            "weight": 1
-          }
-        ]
-      }
+      "textures": "textures/blocks/vector_fortress_interior_15"
     },
     "chow_dojo_1": {
       "textures": "textures/blocks/chow_dojo_1"
@@ -1055,72 +1019,72 @@
     },
     "el_macho_13": {
       "textures": "textures/blocks/el_macho_13"
-	  },
+    },
     "el_macho_14": {
       "textures": "textures/blocks/el_macho_14"
-	  },
+    },
     "el_macho_15": {
       "textures": "textures/blocks/el_macho_15"
-	  },
+    },
     "el_macho_16": {
       "textures": "textures/blocks/el_macho_16"
-	  },
+    },
     "el_macho_17": {
       "textures": "textures/blocks/el_macho_17"
-	  },
+    },
     "el_macho_18": {
       "textures": "textures/blocks/el_macho_18"
-	  },
+    },
     "el_macho_19": {
       "textures": "textures/blocks/el_macho_19"
-	  },
+    },
     "el_macho_20": {
       "textures": "textures/blocks/el_macho_20"
-	  },
+    },
     "el_macho_21": {
       "textures": "textures/blocks/el_macho_21"
-	  },
+    },
     "el_macho_21_2": {
       "textures": "textures/blocks/el_macho_21_2"
-	  },
+    },
     "el_macho_22": {
       "textures": "textures/blocks/el_macho_22"
-	  },
+    },
     "el_macho_22_2": {
       "textures": "textures/blocks/el_macho_22_2"
-	  },
+    },
     "el_macho_23": {
       "textures": "textures/blocks/el_macho_23"
-	  },
+    },
     "el_macho_24": {
       "textures": "textures/blocks/el_macho_24"
-	  },
+    },
     "el_macho_25": {
       "textures": "textures/blocks/el_macho_25"
-	  },
+    },
     "el_macho_26": {
       "textures": "textures/blocks/el_macho_26"
-	  },
-    "avl_1" : {
-		"textures" : [
-             {
-                     "variations": [ 
-                             {
-                                     "path": "textures/blocks/avl_1_1",
-                                     "weight": 1
-                             },
-                             {
-                                     "path": "textures/blocks/avl_1_2",
-                                     "weight": 1
-                             },
-                             {
-                                     "path": "textures/blocks/avl_1_3",
-                                     "weight": 1
-                             }
-                     ]
-             }
-           ]
-       },
+    },
+    "avl_1": {
+      "textures": [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/avl_1_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/avl_1_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/avl_1_3",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
     "avl_2": {
       "textures": "textures/blocks/avl_2"
     },
@@ -1282,7 +1246,7 @@
     },
     "dru_51": {
       "textures": "textures/blocks/dru_51"
-	},
+    },
     "sans_13_1": {
       "textures": "textures/blocks/sans_13_1"
     },
@@ -1393,6 +1357,12 @@
     },
     "stair_smooth_quartz_block": {
       "textures": "textures/blocks/quartz_block_bottom"
+    },
+    "glass": {
+      "textures": "textures/blocks/glass"
+    },
+    "dirt": {
+      "textures": "textures/blocks/dirt"
     }
   },
   "texture_name": "atlas.terrain"

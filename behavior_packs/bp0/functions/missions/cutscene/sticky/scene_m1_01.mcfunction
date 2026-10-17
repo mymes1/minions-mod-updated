@@ -6,6 +6,6 @@ tp @a -83 87 1739 facing -28 87 1739
 
 function cutscene_cage
 tp @a -83 87 1739 facing -28 87 1739
-execute @a ~ ~ ~ tellraw @s {"rawtext":[{"translate":"scene_m1_01"}]}
-execute @a ~ ~ ~ playsound cyd.world.vnc_dialogue @s
-execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s
+execute as @a at @s run tellraw @s {"rawtext":[{"translate":"scene_m1_01"}]}
+execute as @a at @s run playsound cyd.world.vnc_dialogue @s
+execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s

@@ -1,6 +1,6 @@
-execute @a[x=-154,y=51,z=1024,dx=-1,dy=2,dz=-1] ~ ~ ~ tag @s add teleport
-execute @a[tag=teleport] ~ ~ ~ gamemode a @a
-execute @a[tag=teleport] ~ ~ ~ tp @s -228 88 1825
-execute @a[tag=teleport] ~ ~ ~ playsound cyd.generic.scene_transition @s
-execute @a[tag=teleport] ~ ~ ~ event entity @e[type=cyd:lair_teleporter] evt:sid_0
+execute as @a[x=-154,y=51,z=1024,dx=-1,dy=2,dz=-1] at @s run tag @s add teleport
+execute as @a[tag=teleport] at @s run gamemode a @a
+execute as @a[tag=teleport] at @s run tp @s -228 88 1825
+execute as @a[tag=teleport] at @s run playsound cyd.generic.scene_transition @s
+execute as @a[tag=teleport] at @s run event entity @e[type=cyd:lair_teleporter] evt:sid_0
 tag @a[tag=teleport] remove teleport

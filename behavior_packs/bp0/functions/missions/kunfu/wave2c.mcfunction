@@ -20,18 +20,18 @@ summon cyd:kun_wk_henchman_1 -212 30 1832
 
 effect @e[type=!player,tag=!glass] slowness 5 255 true
 
-execute @e[type=cyd:kun_wk_henchman_1] ~ ~ ~ tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
-execute @e[type=cyd:kun_wk_henchman_2] ~ ~ ~ tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
-execute @e[type=cyd:kun_wk_henchman_3] ~ ~ ~ tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
+execute as @e[type=cyd:kun_wk_henchman_1] at @s run tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
+execute as @e[type=cyd:kun_wk_henchman_2] at @s run tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
+execute as @e[type=cyd:kun_wk_henchman_3] at @s run tp @s ~ ~ ~ facing @e[type=cyd:kun_master_chow]
 
-execute @e[type=cyd:kun_wk_henchman_1,tag=!glass] ~ ~ ~ particle cyd:glassbreak ~ ~7 ~
-execute @e[type=cyd:kun_wk_henchman_2,tag=!glass] ~ ~ ~ particle cyd:glassbreak ~ ~7 ~
-execute @e[type=cyd:kun_wk_henchman_3,tag=!glass] ~ ~ ~ particle cyd:glassbreak ~ ~7 ~
+execute as @e[type=cyd:kun_wk_henchman_1,tag=!glass] at @s run particle cyd:glassbreak ~ ~7 ~
+execute as @e[type=cyd:kun_wk_henchman_2,tag=!glass] at @s run particle cyd:glassbreak ~ ~7 ~
+execute as @e[type=cyd:kun_wk_henchman_3,tag=!glass] at @s run particle cyd:glassbreak ~ ~7 ~
 
-execute @e[type=cyd:kun_wk_henchman_1,tag=!glass] ~ ~ ~ tag @s add glass
-execute @e[type=cyd:kun_wk_henchman_2,tag=!glass] ~ ~ ~ tag @s add glass
-execute @e[type=cyd:kun_wk_henchman_3,tag=!glass] ~ ~ ~ tag @s add glass
+execute as @e[type=cyd:kun_wk_henchman_1,tag=!glass] at @s run tag @s add glass
+execute as @e[type=cyd:kun_wk_henchman_2,tag=!glass] at @s run tag @s add glass
+execute as @e[type=cyd:kun_wk_henchman_3,tag=!glass] at @s run tag @s add glass
 
 playsound cyd.mission.kun.glass @a
 
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ playanimation @s breach
+execute as @e[type=cyd:kun_master_chow] at @s run playanimation @s breach

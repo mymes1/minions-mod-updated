@@ -1,4 +1,4 @@
-execute @e[type=cyd:jelly_launcher_prop] ~ ~ ~ kill @e[type=cyd:gadget_godrays,r=2,c=1]
+execute as @e[type=cyd:jelly_launcher_prop] at @s run kill @e[type=cyd:gadget_godrays,r=2,c=1]
 kill @e[type=cyd:jelly_launcher_prop]
 
 summon cyd:jelly_launcher_prop -92 22 1999

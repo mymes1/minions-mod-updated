@@ -21,22 +21,22 @@
     "component_groups": {
       "cyd:shrunk": {
         "minecraft:timer": {
-            "time": 10,
-            "looping": true,
-            "time_down_event": {
-              "event": "evt:normal",
-              "target": "self"
-            }
-          },
+          "time": 10,
+          "looping": true,
+          "time_down_event": {
+            "event": "evt:normal",
+            "target": "self"
+          }
+        },
         "minecraft:scale": {
-            "value": 0.5
+          "value": 0.5
         }
-    },
-    "cyd:normal": {
+      },
+      "cyd:normal": {
         "minecraft:scale": {
-            "value": 1.0
+          "value": 1.0
         }
-    },
+      },
       "cyd:powered": {
         "minecraft:is_charged": {}
       },
@@ -746,18 +746,20 @@
         },
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1,
-          "entity_types": {
-            "filters": {
-              "any_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "operator": "equals",
-                  "value": "hostileminion"
-                }
-              ]
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "equals",
+                    "value": "hostileminion"
+                  }
+                ]
+              }
             }
-          }
+          ]
         },
         "minecraft:leashable": {
           "soft_distance": 4,
@@ -829,8 +831,7 @@
             "deals_damage": false
           },
           {
-            "on_damage": {
-            },
+            "on_damage": {},
             "deals_damage": false
           }
         ]
@@ -884,7 +885,9 @@
       },
       "minecraft:tameable": {
         "probability": 1,
-        "tame_items": "cyd:banana",
+        "tame_items": [
+          "cyd:banana"
+        ],
         "tame_event": {
           "event": "cyd:tamed",
           "target": "self"
@@ -1772,22 +1775,22 @@
       },
       "evt:shrink_entity": {
         "add": {
-            "component_groups": [
-                "cyd:shrunk"
-            ]
-        }
-    },
-    "evt:normal": {
-        "add": {
-            "component_groups": [
-                "cyd:normal"
-            ]
-    },
-    "remove": {
-        "component_groups": [
+          "component_groups": [
             "cyd:shrunk"
-        ]
-        } 
+          ]
+        }
+      },
+      "evt:normal": {
+        "add": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:shrunk"
+          ]
+        }
       },
       "evt:mv_1": {
         "add": {
@@ -2317,7 +2320,9 @@
             "cyd:ignite"
           ]
         }
-      }
+      },
+      "minecraft:on_leash": {},
+      "minecraft:on_unleash": {}
     }
   }
 }

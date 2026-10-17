@@ -1,43 +1,43 @@
 #used for laser diagonal
-execute @s ^-10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^-1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^-1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^ ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^ ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
-execute @s ^10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
-execute @s ^10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute as @s at @s positioned ^-10 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-10 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-9 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-9 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-8 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-8 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-7 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-7 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-6 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-6 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-5 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-5 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-4 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-4 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-3 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-3 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-2 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-2 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^-1 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^-1 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^ ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^ ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^1 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^1 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^2 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^2 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^3 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^3 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^4 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^4 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^5 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^5 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^6 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^6 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^7 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^7 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^8 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^8 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^9 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^9 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound
+execute as @s at @s positioned ^10 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add caught_wk
+execute as @s at @s positioned ^10 ^ ^ as @p[r=0.5,tag=!dev] at @s run tag @s add laser_sound

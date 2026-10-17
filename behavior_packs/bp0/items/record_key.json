@@ -1,10 +1,14 @@
 {
-  "format_version": "1.10",
+  "format_version": "1.21.50",
   "minecraft:item": {
     "description": {
-      "identifier": "cyd:record_key"
+      "identifier": "cyd:record_key",
+      "menu_category": {
+        "category": "equipment"
+      }
     },
     "components": {
+      "minecraft:icon": "record_key"
     }
   }
 }

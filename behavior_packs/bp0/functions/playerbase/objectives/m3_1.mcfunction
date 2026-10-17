@@ -8,4 +8,4 @@ scoreboard players set @e[type=cyd:system_storage] mp 0
 scoreboard players set @e[type=cyd:system_storage] m3 1
 titleraw @a actionbar {"rawtext":[{"translate":"objective.m3_01"}]}
 
-execute @a ~ ~ ~ playsound cyd.mission.objective @s
+execute as @a at @s run playsound cyd.mission.objective @s

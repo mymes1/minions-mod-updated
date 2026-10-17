@@ -1,10 +1,14 @@
 {
-  "format_version": "1.10",
+  "format_version": "1.21.50",
   "minecraft:item": {
     "description": {
-      "identifier": "cyd:monalisa"
+      "identifier": "cyd:monalisa",
+      "menu_category": {
+        "category": "equipment"
+      }
     },
     "components": {
+      "minecraft:icon": "monalisa"
     }
   }
 }

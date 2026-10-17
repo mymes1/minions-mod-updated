@@ -1,20 +1,20 @@
 #south
-execute @a[rym=-22.5,ry=22.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 11 replace wool
+execute as @a[rym=-22.5,ry=22.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ blue_wool [] replace white_wool
 #southeast
-execute @a[rym=-67.5,ry=-22.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 10 replace wool
+execute as @a[rym=-67.5,ry=-22.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ purple_wool [] replace white_wool
 
 #east
-execute @a[rym=-112.5,ry=-67.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 13 replace wool
+execute as @a[rym=-112.5,ry=-67.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ green_wool [] replace white_wool
 #northeast
-execute @a[rym=-157.5,ry=-112.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 9 replace wool
+execute as @a[rym=-157.5,ry=-112.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ cyan_wool [] replace white_wool
 #southwest
-execute @a[rym=22.5,ry=67.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 1 replace wool
+execute as @a[rym=22.5,ry=67.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ orange_wool [] replace white_wool
 #west
-execute @a[rym=67.5,ry=112.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 4 replace wool
+execute as @a[rym=67.5,ry=112.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ yellow_wool [] replace white_wool
 #northwest
-execute @a[rym=112.5,ry=157.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 6 replace wool
+execute as @a[rym=112.5,ry=157.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ pink_wool [] replace white_wool
 #north1
-execute @a[rym=157.5,ry=180] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 14 replace wool
+execute as @a[rym=157.5,ry=180] at @s run fill ~ ~-1 ~ ~ ~-2 ~ red_wool [] replace white_wool
 #north2
-execute @a[rym=-180,ry=-157.5] ~ ~ ~ fill ~ ~-1 ~ ~ ~-2 ~ wool 14 replace wool
+execute as @a[rym=-180,ry=-157.5] at @s run fill ~ ~-1 ~ ~ ~-2 ~ red_wool [] replace white_wool
 

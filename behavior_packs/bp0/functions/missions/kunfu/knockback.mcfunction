@@ -13,5 +13,5 @@ scoreboard players set @s kuncharge 0
 scoreboard players set @s kunchargetimer 11
 
 event entity @e[r=7,type=cyd:showdown_belle_bottom] evt:normal
-execute @s[tag=!usedknockbackonce] ~ ~ ~ event entity @e[type=cyd:kun_master_chow] evt:scene4
-execute @s[tag=!usedknockbackonce] ~ ~ ~ tag @a add usedknockbackonce
+execute as @s[tag=!usedknockbackonce] at @s run event entity @e[type=cyd:kun_master_chow] evt:scene4
+execute as @s[tag=!usedknockbackonce] at @s run tag @a add usedknockbackonce

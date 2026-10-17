@@ -1,6 +1,6 @@
 tellraw @a {"rawtext":[{"translate":"dojo.cutscene4.5"}]}
 
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ playanimation @s talk2
+execute as @e[type=cyd:kun_master_chow] at @s run playanimation @s talk2
 
 setblock -211 30 1842 air
 setblock -210 31 1842 air

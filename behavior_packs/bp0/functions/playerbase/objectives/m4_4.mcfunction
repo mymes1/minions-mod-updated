@@ -3,4 +3,4 @@ titleraw @a[tag=painting] actionbar {"rawtext":[{"translate":"objective.m4_04_pa
 titleraw @a[tag=carpet] actionbar {"rawtext":[{"translate":"objective.m4_04_carpet"}]}
 titleraw @a[tag=vase] actionbar {"rawtext":[{"translate":"objective.m4_04_vase"}]}
 
-execute @a ~ ~ ~ playsound cyd.mission.objective @s
+execute as @a at @s run playsound cyd.mission.objective @s
