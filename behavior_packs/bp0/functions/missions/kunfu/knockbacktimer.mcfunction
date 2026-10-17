@@ -10,19 +10,19 @@
 #stage 0 
 
 
-execute @s[scores={kuncharge=0},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi0"}]}
-execute @s[scores={kuncharge=1},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi1"}]}
-execute @s[scores={kuncharge=2},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi2"}]}
-execute @s[scores={kuncharge=3},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi3"}]} 
-execute @s[scores={kuncharge=4},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi4"}]}  
-execute @s[scores={kuncharge=5},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi5"}]}
-execute @s[scores={kuncharge=6..},tag=chibuildup] ~ ~ ~ titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi6"}]}
+execute as @s[scores={kuncharge=0},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi0"}]}
+execute as @s[scores={kuncharge=1},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi1"}]}
+execute as @s[scores={kuncharge=2},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi2"}]}
+execute as @s[scores={kuncharge=3},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi3"}]}
+execute as @s[scores={kuncharge=4},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi4"}]}
+execute as @s[scores={kuncharge=5},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi5"}]}
+execute as @s[scores={kuncharge=6..},tag=chibuildup] at @s run titleraw @s[tag=chibuildup] actionbar {"rawtext":[{"translate":"gadget.chi6"}]}
 
 
-execute @s[scores={kunchargetimer=1}] ~ ~ ~ scoreboard players set @s kuncharge 0
+execute as @s[scores={kunchargetimer=1}] at @s run scoreboard players set @s kuncharge 0
 
 
-execute @s[scores={kunchargetimer=..10}] ~ ~ ~ scoreboard players remove @s kunchargetimer 1
-execute @s[scores={kunchargetimer=0}] ~ ~ ~ scoreboard players set @s kunchargetimer 11
+execute as @s[scores={kunchargetimer=..10}] at @s run scoreboard players remove @s kunchargetimer 1
+execute as @s[scores={kunchargetimer=0}] at @s run scoreboard players set @s kunchargetimer 11
 
 #execute @s[scores={kuncharge=6..}] ~ ~ ~ function missions/kunfu/knockback

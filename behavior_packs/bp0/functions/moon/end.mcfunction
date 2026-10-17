@@ -1,26 +1,26 @@
-execute @e[type=cyd:moon_boss_system] ~ ~ ~ event entity @s evt:sid_0
+execute as @e[type=cyd:moon_boss_system] at @s run event entity @s evt:sid_0
 event entity @e[type=cyd:door_1] evt:sid_2
 event entity @e[type=cyd:door_2] evt:sid_2
 event entity @e[type=cyd:door_3] evt:sid_2
 event entity @e[type=cyd:door_4] evt:sid_2
 event entity @e[type=cyd:door_5] evt:sid_2
-fill 9 32 1950 9 38 1970 air 0 replace barrier
-fill -11 34 1957 -10 31 1964 barrier 0 replace air
-execute @e[type=cyd:system_storage] ~ ~ ~ tag @a add startworldmusic
+fill 9 32 1950 9 38 1970 air [] replace barrier
+fill -11 34 1957 -10 31 1964 barrier [] replace air
+execute as @e[type=cyd:system_storage] at @s run tag @a add startworldmusic
 #turn back to human
 tag @a remove inmission
 event entity @e[type=cyd:moon_mission_start] evt:sid_0
 function playerbase/villain_points_m5
 #function playerbase/location_unlocks
 effect @a clear
-execute @e[type=cyd:moon_boss_system] ~ ~ ~ function moon/cheerminion_delete
+execute as @e[type=cyd:moon_boss_system] at @s run function moon/cheerminion_delete
 playsound cyd.mission.moon.shrink_pickup @a
 give @a cyd:shrinkray 1
-execute @e[type=cyd:moon_boss_system] ~ ~ ~ setblock -126 25 1993 cyd:vector_fortress_interior_14
+execute as @e[type=cyd:moon_boss_system] at @s run setblock -126 25 1993 cyd:vector_fortress_interior_14
 scoreboard players set @e[type=cyd:system_storage] m6 0
 tag @e[type=cyd:collectible_storage] add trophy_moonstone
-execute @e[type=cyd:tp_system,tag=vector_defeat] ~ ~ ~ event entity @e[type=cyd:teleport_escape,c=1] evt:despawn
-execute @e[type=cyd:tp_system,tag=two_active] ~ ~ ~ event entity @e[type=cyd:teleport_escape,c=1] evt:despawn
+execute as @e[type=cyd:tp_system,tag=vector_defeat] at @s run event entity @e[type=cyd:teleport_escape,c=1] evt:despawn
+execute as @e[type=cyd:tp_system,tag=two_active] at @s run event entity @e[type=cyd:teleport_escape,c=1] evt:despawn
 tag @e[type=cyd:tp_system,tag=vector_defeat] remove vector_defeat
 tag @e[type=cyd:tp_system,tag=two_active] remove two_active
 kill @e[type=cyd:vector_boss]

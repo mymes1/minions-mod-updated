@@ -7,4 +7,4 @@
 #execute @e[type=cyd:trigger_chase_system,tag=interruptchs] ~ ~ ~ tag @s remove interruptchs
 #execute @e[type=cyd:trigger_chase_system,tag=chsstarted,tag=interruptchs] ~ ~ ~ tag @s remove interruptchs
 #execute @e[type=cyd:trigger_chase_system,tag=chsstarted] ~ ~ ~ tag @s remove chsstarted
-execute @s ~ ~ ~ tag @s add a
+execute as @s at @s run tag @s add a

@@ -2,30 +2,30 @@
 
 #set zone
 
-fill -196 88 1779 -174 88 1779 fire 0 replace air
-fill -196 88 1779 -174 88 1779 fire 0 replace light_block
-fill -196 89 1779 -174 95 1779 barrier 0 replace air
+fill -196 88 1779 -174 88 1779 fire [] replace air
+fill -196 88 1779 -174 88 1779 fire [] replace light_block_15
+fill -196 89 1779 -174 95 1779 barrier [] replace air
 
 
-fill -197 88 1823 -172 88 1823 fire 0 replace air
-fill -197 88 1823 -172 88 1823 fire 0 replace light_block
-fill -197 89 1823 -172 95 1823 barrier 0 replace air
+fill -197 88 1823 -172 88 1823 fire [] replace air
+fill -197 88 1823 -172 88 1823 fire [] replace light_block_15
+fill -197 89 1823 -172 95 1823 barrier [] replace air
 
-fill -197 88 1817 -197 88 1816 fire 0 replace air
-fill -197 88 1817 -197 88 1816 fire 0 replace light_block
-fill -197 89 1817 -197 90 1816 barrier 0 replace air
+fill -197 88 1817 -197 88 1816 fire [] replace air
+fill -197 88 1817 -197 88 1816 fire [] replace light_block_15
+fill -197 89 1817 -197 90 1816 barrier [] replace air
 
-fill -197 88 1811 -197 88 1807 fire 0 replace air
-fill -197 88 1811 -197 88 1807 fire 0 replace light_block
-fill -197 89 1811 -197 95 1807 barrier 0 replace air
+fill -197 88 1811 -197 88 1807 fire [] replace air
+fill -197 88 1811 -197 88 1807 fire [] replace light_block_15
+fill -197 89 1811 -197 95 1807 barrier [] replace air
 
-fill -198 88 1792 -198 88 1788 fire 0 replace air
-fill -198 88 1792 -198 88 1788 fire 0 replace light_block
-fill -198 89 1792 -198 95 1788 barrier 0 replace air
+fill -198 88 1792 -198 88 1788 fire [] replace air
+fill -198 88 1792 -198 88 1788 fire [] replace light_block_15
+fill -198 89 1792 -198 95 1788 barrier [] replace air
 
-fill -170 88 1792 -170 88 1795 fire 0 replace air
-fill -170 88 1792 -170 88 1795 fire 0 replace light_block
-fill -170 89 1792 -170 95 1795 barrier 0 replace air
+fill -170 88 1792 -170 88 1795 fire [] replace air
+fill -170 88 1792 -170 88 1795 fire [] replace light_block_15
+fill -170 89 1792 -170 95 1795 barrier [] replace air
 
 time set midnight
 gamerule dodaylightcycle false

@@ -1,3 +1,3 @@
-execute @s[tag=!turn] ~ ~ ~ detect ~ ~-2 ~ redstone_block 0 tp @s ~ ~ ~ ~90
-execute @s[tag=!turn] ~ ~ ~ detect ~ ~-2 ~ redstone_block 0 tag @s add turn
-execute @s[tag=turn] ~ ~ ~ detect ~ ~-2 ~ smooth_stone 0 tag @s remove turn
+execute as @s[tag=!turn] at @s if block ~ ~-2 ~ redstone_block [] run tp @s ~ ~ ~ ~90
+execute as @s[tag=!turn] at @s if block ~ ~-2 ~ redstone_block [] run tag @s add turn
+execute as @s[tag=turn] at @s if block ~ ~-2 ~ smooth_stone [] run tag @s remove turn

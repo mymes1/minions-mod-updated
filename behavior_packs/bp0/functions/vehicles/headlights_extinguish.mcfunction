@@ -1,1 +1,1 @@
-fill ~5 ~5 ~5 ~-5 ~-5 ~-5 air 0 replace light_block
+fill ~5 ~5 ~5 ~-5 ~-5 ~-5 air [] replace light_block_15

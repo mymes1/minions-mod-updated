@@ -27,18 +27,18 @@ tickingarea add 63 80 1800 63 80 1800 fix25
 tickingarea add 83 79 1831 83 79 1831 fix26
 tickingarea add 80 79 1787 80 79 1787 fix27
 
-execute @p[tag=!dev] ~ ~ ~ titleraw @a title {"rawtext":[{"translate":"chase.1.cutscene.outro"}]}
-execute @p[tag=!dev] ~ ~ ~ titleraw @a actionbar {"rawtext":[{"translate":"chase.text.failed"}]}
+execute as @p[tag=!dev] at @s run titleraw @a title {"rawtext":[{"translate":"chase.1.cutscene.outro"}]}
+execute as @p[tag=!dev] at @s run titleraw @a actionbar {"rawtext":[{"translate":"chase.text.failed"}]}
 
-execute @a[tag=!dev] ~ ~ ~ event entity @e[family=chasereset] evt:despawn
-execute @a[tag=!dev] ~ ~ ~ kill @e[type=cyd:cart]
-execute @a[tag=!dev] ~ ~ ~ kill @e[type=item]
+execute as @a[tag=!dev] at @s run event entity @e[family=chasereset] evt:despawn
+execute as @a[tag=!dev] at @s run kill @e[type=cyd:cart]
+execute as @a[tag=!dev] at @s run kill @e[type=item]
 
-execute @a[tag=!dev] ~ ~ ~ playsound cyd.mission.sticky.mission_failed @s
+execute as @a[tag=!dev] at @s run playsound cyd.mission.sticky.mission_failed @s
 #execute @p[tag=!dev] ~ ~ ~ function chase/reset
 
-execute @p[tag=!dev] ~ ~ ~ tp @a -57 110 1724 facing -54 111 1724
+execute as @p[tag=!dev] at @s run tp @a -57 110 1724 facing -54 111 1724
 
-execute @p[tag=!dev] ~ ~ ~ event entity @e[type=cyd:gru_bike] evt:despawn
+execute as @p[tag=!dev] at @s run event entity @e[type=cyd:gru_bike] evt:despawn
 scoreboard players set @e[type=cyd:system_storage] m2 0
 

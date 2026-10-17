@@ -20,16 +20,18 @@
         "minecraft:instant_despawn": {}
       },
       "cyd:knockback": {
-        "minecraft:spawn_entity": [
-          {
-            "min_wait_time": 0,
-            "max_wait_time": 0,
-            "spawn_entity": "cyd:nun_point",
-            "single_use": true,
-            "num_to_spawn": 1,
-            "should_leash": false
-          }
-        ],
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "spawn_entity": "cyd:nun_point",
+              "single_use": true,
+              "num_to_spawn": 1,
+              "should_leash": false
+            }
+          ]
+        },
         "minecraft:mark_variant": {
           "value": 1
         },
@@ -69,14 +71,16 @@
         "max": 30
       },
       "minecraft:physics": {},
-      "minecraft:damage_sensor": [
-        {
-          "deals_damage": false,
-          "on_damage": {
-            "event": "cyd:hit"
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "on_damage": {
+              "event": "cyd:hit"
+            }
           }
-        }
-      ],
+        ]
+      },
       "minecraft:breathable": {
         "totalSupply": 15,
         "suffocateTime": 0,

@@ -1,26 +1,26 @@
 #reset map
 
 #reset zone
-fill -196 88 1779 -174 88 1779 air 0 replace fire
-fill -196 89 1779 -174 95 1779 air 0 replace barrier
+fill -196 88 1779 -174 88 1779 air [] replace fire
+fill -196 89 1779 -174 95 1779 air [] replace barrier
 
 
-fill -197 88 1823 -172 88 1823 air 0 replace fire
-fill -197 89 1823 -172 95 1823 air 0 replace barrier
+fill -197 88 1823 -172 88 1823 air [] replace fire
+fill -197 89 1823 -172 95 1823 air [] replace barrier
 
 
 
-fill -197 88 1817 -197 88 1816 air 0 replace fire
-fill -197 89 1817 -197 90 1816 air 0 replace barrier
+fill -197 88 1817 -197 88 1816 air [] replace fire
+fill -197 89 1817 -197 90 1816 air [] replace barrier
 
-fill -197 88 1811 -197 88 1807 air 0 replace fire
-fill -197 89 1811 -197 95 1807 air 0 replace barrier
+fill -197 88 1811 -197 88 1807 air [] replace fire
+fill -197 89 1811 -197 95 1807 air [] replace barrier
 
-fill -198 88 1792 -198 88 1788 air 0 replace fire
-fill -198 89 1792 -198 95 1788 air 0 replace barrier
+fill -198 88 1792 -198 88 1788 air [] replace fire
+fill -198 89 1792 -198 95 1788 air [] replace barrier
 
-fill -170 88 1792 -170 88 1795 air 0 replace fire
-fill -170 89 1792 -170 95 1795 air 0 replace barrier
+fill -170 88 1792 -170 88 1795 air [] replace fire
+fill -170 89 1792 -170 95 1795 air [] replace barrier
 
 time set day
 gamerule dodaylightcycle true

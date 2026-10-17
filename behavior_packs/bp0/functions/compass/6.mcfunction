@@ -3,5 +3,5 @@
 clear @a lodestone_compass
 
 clone -164 42 1042 -164 42 1042 -164 43 1042
-setblock -164 43 1042 air 0 destroy
+setblock -164 43 1042 air [] destroy
 kill @e[name=chest]

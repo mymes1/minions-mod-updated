@@ -1,5 +1,5 @@
 #scenes
 
 #nunchuk scene
-execute @e[type=cyd:trigger_chase_system,tag=cutscenechase,c=1] ~ ~ ~ function chase/scene/scene2
+execute as @e[type=cyd:trigger_chase_system,tag=cutscenechase,c=1] at @s run function chase/scene/scene2
 

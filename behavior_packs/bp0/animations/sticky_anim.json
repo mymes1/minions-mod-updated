@@ -143,7 +143,7 @@
       "loop": false,
       "timeline": {
         "2.4": [
-          "/fill -117 39 1950 -119 36 1950 air 0 replace barrier"
+          "/fill -117 39 1950 -119 36 1950 air [] replace barrier"
         ]
       },
       "animation_length": 2.6
@@ -153,12 +153,12 @@
       "timeline": {
         "0.5": [
           "/tickingarea add circle ~ ~ ~ 1 temp_record",
-          "/execute @p[tag=!dev] ~ ~ ~ clear @s cyd:record_key 0 1",
+          "/execute as @p[tag=!dev] at @s run clear @s cyd:record_key 0 1",
           "/playsound cyd.mission.sticky.record_place @a",
-          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_had_prop] ~ ~ ~ kill @e[type=cyd:gadget_godrays,c=1]",
-          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ kill @e[type=cyd:sticky_hand_prop]",
-          "/execute @p[tag=!dev] ~ ~ ~ function sticky/structures_delete",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ structure load secretary4 -110.60 36.06 1969.55 0_degrees"
+          "/execute as @p[tag=!dev] at @s as @e[type=cyd:trigger_sticky_system] at @s as @e[type=cyd:sticky_had_prop] at @s run kill @e[type=cyd:gadget_godrays,c=1]",
+          "/execute as @p[tag=!dev] at @s as @e[type=cyd:trigger_sticky_system] at @s run kill @e[type=cyd:sticky_hand_prop]",
+          "/execute as @p[tag=!dev] at @s run function sticky/structures_delete",
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s run structure load secretary4 -110.60 36.06 1969.55 0_degrees"
         ],
         "3.0": [
           "/playsound cyd.mission.sticky.Record_Player_Play @a"
@@ -170,14 +170,14 @@
           "/playsound cyd.mission.sticky.elevator.moving @a"
         ],
         "8.0": [
-          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ summon cyd:gadget_godrays -95 36 1962",
-          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ summon cyd:sticky_hand_prop -95 36 1962",
+          "/execute as @p[tag=!dev] at @s as @e[type=cyd:trigger_sticky_system] at @s run summon cyd:gadget_godrays -95 36 1962",
+          "/execute as @p[tag=!dev] at @s as @e[type=cyd:trigger_sticky_system] at @s run summon cyd:sticky_hand_prop -95 36 1962",
           "/function missions/dialogue/sticky/prompt/prompt.coordinate.0.0",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ event entity @e[type=cyd:elevator] evt:sid_1",
-          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ function playerbase/objectives/m1_3",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_vent,c=1,r=5,x=-96,y=41,z=1972] ~ ~ ~ tag @s add tutorial",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_box_large,c=1,r=5,x=-88,y=40,z=1982] ~ ~ ~ tag @s add tutorial",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_box_small,c=1,r=5,x=-105,y=37,z=1971] ~ ~ ~ tag @s add tutorial"
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s run event entity @e[type=cyd:elevator] evt:sid_1",
+          "/execute as @p[tag=!dev] at @s as @e[type=cyd:trigger_sticky_system] at @s run function playerbase/objectives/m1_3",
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s as @e[type=cyd:sticky_vent,c=1,r=5,x=-96,y=41,z=1972] at @s run tag @s add tutorial",
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s as @e[type=cyd:sticky_box_large,c=1,r=5,x=-88,y=40,z=1982] at @s run tag @s add tutorial",
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s as @e[type=cyd:sticky_box_small,c=1,r=5,x=-105,y=37,z=1971] at @s run tag @s add tutorial"
         ],
         "10.0": [
           "/tickingarea remove temp_record",
@@ -324,7 +324,7 @@
       "timeline": {
         "0.0": [
           "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.1",
-          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:elevator] ~ ~ ~ event entity @s evt:sid_2"
+          "/execute as @e[type=cyd:trigger_sticky_system] at @s as @e[type=cyd:elevator] at @s run event entity @s evt:sid_2"
         ],
         "4.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.2",
         "8.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.3"

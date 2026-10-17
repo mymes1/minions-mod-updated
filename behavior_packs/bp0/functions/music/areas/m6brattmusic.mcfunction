@@ -1,14 +1,14 @@
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.overworld.fly_solo
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.overworld.career_day
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.opening
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m2
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m3
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m4
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m5
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m6.1
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.m6.2
-execute @s[tag=!bratt] ~ ~ ~ stopsound @s cyd.music.end
-execute @s[tag=!bratt] ~ ~ ~ scoreboard players set @s musicbackground 0
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.overworld.fly_solo
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.overworld.career_day
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.opening
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m2
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m3
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m4
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m5
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m6.1
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.m6.2
+execute as @s[tag=!bratt] at @s run stopsound @s cyd.music.end
+execute as @s[tag=!bratt] at @s run scoreboard players set @s musicbackground 0
 
 
 

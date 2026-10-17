@@ -326,85 +326,85 @@
 
 
         {
-          "controller.render.player.first_person.finger": "variable.is_first_person && query.get_equipped_item_name(0) == 'slingshot'"
+          "controller.render.player.first_person.finger": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot')"
         },
         {
-          "controller.render.player.third_person.finger.p": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id != 1"
+          "controller.render.player.third_person.finger.p": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot') && query.skin_id != 1"
         },
         {
-          "controller.render.player.third_person.finger.m": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id == 1"
-        },
-
-
-
-        {
-          "controller.render.player.first_person.fart": "variable.is_first_person && query.get_equipped_item_name(0) == 'fartgrenade'"
-        },
-        {
-          "controller.render.player.third_person.fart": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'fartgrenade'  && query.skin_id != 1 "
-        },
-        {
-          "controller.render.player.third_person_minion.fart": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'fartgrenade'  && query.skin_id == 1 "
+          "controller.render.player.third_person.finger.m": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot') && query.skin_id == 1"
         },
 
 
 
         {
-          "controller.render.player.first_person.cheese": "variable.is_first_person && query.get_equipped_item_name(0) == 'cheesegun'"
+          "controller.render.player.first_person.fart": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')"
         },
         {
-          "controller.render.player.third_person.cheese": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id != 1 "
+          "controller.render.player.third_person.fart": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')  && query.skin_id != 1 "
         },
         {
-          "controller.render.player.third_person_minion.cheese": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id == 1 "
-        },
-
-
-
-        {
-          "controller.render.player.first_person.shrink": "variable.is_first_person && query.get_equipped_item_name(0) == 'shrinkray'"
-        },
-        {
-          "controller.render.player.third_person.shrink": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id != 1"
-        },
-        {
-          "controller.render.player.third_person_minion.shrink": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id == 1 "
+          "controller.render.player.third_person_minion.fart": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')  && query.skin_id == 1 "
         },
 
 
 
         {
-          "controller.render.player.first_person.jam": "variable.is_first_person && query.get_equipped_item_name(0) == 'jamgun'"
+          "controller.render.player.first_person.cheese": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun')"
         },
         {
-          "controller.render.player.third_person.jam": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'jamgun' && query.skin_id != 1 "
+          "controller.render.player.third_person.cheese": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && query.skin_id != 1 "
         },
         {
-          "controller.render.player.third_person_minion.jam": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'jamgun' && query.skin_id == 1 "
-        },
-
-
-
-        {
-          "controller.render.player.first_person.plasma_jam": "variable.is_first_person && query.get_equipped_item_name(0) == 'plasma_jamgun'"
-        },
-        {
-          "controller.render.player.third_person.plasma_jam": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'plasma_jamgun' && query.skin_id != 1 "
-        },
-        {
-          "controller.render.player.third_person_minion.plasma_jam": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'plasma_jamgun' && query.skin_id == 1 "
+          "controller.render.player.third_person_minion.cheese": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && query.skin_id == 1 "
         },
 
 
 
         {
-          "controller.render.player.first_person.chi": "variable.is_first_person && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+          "controller.render.player.first_person.shrink": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray')"
         },
         {
-          "controller.render.player.third_person.chi": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'chi_nunchuk' && query.skin_id != 1 "
+          "controller.render.player.third_person.shrink": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray') && query.skin_id != 1"
         },
         {
-          "controller.render.player.third_person_minion.chi": "!variable.is_first_person && !variable.map_face_icon && query.get_equipped_item_name(0) == 'chi_nunchuk' && query.skin_id == 1 "
+          "controller.render.player.third_person_minion.shrink": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray') && query.skin_id == 1 "
+        },
+
+
+
+        {
+          "controller.render.player.first_person.jam": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun')"
+        },
+        {
+          "controller.render.player.third_person.jam": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && query.skin_id != 1 "
+        },
+        {
+          "controller.render.player.third_person_minion.jam": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && query.skin_id == 1 "
+        },
+
+
+
+        {
+          "controller.render.player.first_person.plasma_jam": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun')"
+        },
+        {
+          "controller.render.player.third_person.plasma_jam": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && query.skin_id != 1 "
+        },
+        {
+          "controller.render.player.third_person_minion.plasma_jam": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && query.skin_id == 1 "
+        },
+
+
+
+        {
+          "controller.render.player.first_person.chi": "variable.is_first_person && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
+        },
+        {
+          "controller.render.player.third_person.chi": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk') && query.skin_id != 1 "
+        },
+        {
+          "controller.render.player.third_person_minion.chi": "!variable.is_first_person && !variable.map_face_icon && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk') && query.skin_id == 1 "
         }
       ],
       "enable_attachables": true

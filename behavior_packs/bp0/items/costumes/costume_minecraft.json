@@ -1,10 +1,14 @@
 {
-  "format_version": "1.10",
+  "format_version": "1.21.50",
   "minecraft:item": {
     "description": {
-      "identifier": "cyd:costume_minecraft"
+      "identifier": "cyd:costume_minecraft",
+      "menu_category": {
+        "category": "equipment"
+      }
     },
     "components": {
+      "minecraft:icon": "costume_minecraft"
     }
   }
 }

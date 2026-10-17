@@ -1,1 +1,1 @@
-execute @s ~ ~ ~ detect ^ ^-1 ^ wool 11 say south
+execute as @s at @s if block ^ ^-1 ^ blue_wool [] run say south

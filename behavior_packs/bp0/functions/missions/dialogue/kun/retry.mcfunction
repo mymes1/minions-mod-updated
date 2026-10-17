@@ -1,7 +1,7 @@
 #clear mob
 
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ effect @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30] invisibility 5 255 true
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ kill @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30]
+execute as @e[type=cyd:kun_master_chow] at @s run effect @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30] invisibility 5 255 true
+execute as @e[type=cyd:kun_master_chow] at @s run kill @e[type=!cyd:kun_master_chow,type=!player,type=!cyd:firework_crate,type=!cyd:spinner,type=!cyd:dummy,r=30]
 
 
 
@@ -24,7 +24,7 @@ tp @a -210 30 1842 facing -204 30 1842
 
 
 #replay animation
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ playanimation @s talk1
+execute as @e[type=cyd:kun_master_chow] at @s run playanimation @s talk1
 
 #replay wave 1
 event entity @e[type=cyd:kun_master_chow] evt:sid_1

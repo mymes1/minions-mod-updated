@@ -2,7 +2,7 @@
 
 tellraw @a[tag=!readfailed] {"rawtext":[{"translate":"dojo.failed"}]}
 playsound cyd.world.vnc_dialogue @a
-execute @a[tag=!dev] ~ ~ ~ playsound cyd.mission.sticky.mission_failed @s
+execute as @a[tag=!dev] at @s run playsound cyd.mission.sticky.mission_failed @s
 event entity @a evt:sid_0
 function text/player
 tag @s add readfailed

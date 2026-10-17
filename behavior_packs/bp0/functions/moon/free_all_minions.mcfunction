@@ -10,4 +10,4 @@ scoreboard players set @a minionnum 100
 #execute @a[r=10] ~ ~ ~ playsound cyd.collected @a
 
 title @a title §4
-execute @p[scores={minionnum=100}] ~ ~ ~ titleraw @a actionbar {"rawtext":[{"translate":"minion.saved"},{"translate":"minion.num100"}]}
+execute as @p[scores={minionnum=100}] at @s run titleraw @a actionbar {"rawtext":[{"translate":"minion.saved"},{"translate":"minion.num100"}]}

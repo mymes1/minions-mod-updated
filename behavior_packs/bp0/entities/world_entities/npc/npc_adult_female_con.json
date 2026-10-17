@@ -7,37 +7,37 @@
       "is_summonable": true,
       "is_experimental": false,
       "scripts": {
-          "animate": [
-              "cheese_ctrl"
-          ]
+        "animate": [
+          "cheese_ctrl"
+        ]
       },
       "animations": {
-          "cheese_ctrl": "controller.animation.vp.cheese_sound",
-          "cheese_sound": "animation.cyd.vp.woman.cheesed"
+        "cheese_ctrl": "controller.animation.vp.cheese_sound",
+        "cheese_sound": "animation.cyd.vp.woman.cheesed"
       }
     },
     "component_groups": {
       "cyd:shrunk": {
         "minecraft:timer": {
-            "time": 60,
-            "looping": true,
-            "time_down_event": {
-                "event": "evt:normal",
-                "target": "self"
-            }
+          "time": 60,
+          "looping": true,
+          "time_down_event": {
+            "event": "evt:normal",
+            "target": "self"
+          }
         },
         "minecraft:scale": {
-            "value": 0.5
+          "value": 0.5
         }
-    },
-    "cyd:normal": {
+      },
+      "cyd:normal": {
         "minecraft:scale": {
-            "value": 1.0
+          "value": 1.0
         },
         "minecraft:mark_variant": {
           "value": 0
         }
-    },
+      },
       "cyd:mv_1": {
         "minecraft:mark_variant": {
           "value": 1
@@ -51,14 +51,14 @@
           "time": 60,
           "looping": false,
           "time_down_event": {
-              "event": "evt:normal",
-              "target": "self"
+            "event": "evt:normal",
+            "target": "self"
           }
-      },
+        },
         "minecraft:mark_variant": {
           "value": 2
         }
-      },      
+      },
       "cyd:interact": {
         "minecraft:interact": {
           "interactions": [
@@ -166,23 +166,38 @@
         "totalSupply": 15,
         "suffocateTime": 0
       },
-      "minecraft:preferred_path" : {
-        "max_fall_blocks" : 1,
-        "jump_cost" : 5,
-        "default_block_cost" : 1.5,
-        "preferred_path_blocks" : [
-          { 
-            "cost" : 0,
-            "blocks" : [ 
+      "minecraft:preferred_path": {
+        "max_fall_blocks": 1,
+        "jump_cost": 5,
+        "default_block_cost": 1.5,
+        "preferred_path_blocks": [
+          {
+            "cost": 0,
+            "blocks": [
               "grass_path",
               "smooth_stone",
               "silver_glazed_terracotta"
             ]
           },
-          { 
-            "cost" : 100,
-            "blocks" : [ 
-              "concrete"
+          {
+            "cost": 100,
+            "blocks": [
+              "white_concrete",
+              "orange_concrete",
+              "magenta_concrete",
+              "light_blue_concrete",
+              "yellow_concrete",
+              "lime_concrete",
+              "pink_concrete",
+              "gray_concrete",
+              "light_gray_concrete",
+              "cyan_concrete",
+              "purple_concrete",
+              "blue_concrete",
+              "brown_concrete",
+              "green_concrete",
+              "red_concrete",
+              "black_concrete"
             ]
           }
         ]
@@ -286,50 +301,50 @@
     "events": {
       "evt:shrink_entity": {
         "add": {
-            "component_groups": [
-                "cyd:shrunk"
-            ]
+          "component_groups": [
+            "cyd:shrunk"
+          ]
         }
-    },
-    "evt:activate_move": {
-      "add": {
-        "component_groups": [
-          "cyd:target_near_mod",
-          "cyd:move"
-        ]
       },
-      "remove": {
-        "component_groups": [
-          "cyd:no_move"
-        ]
-      }
-    },
-    "evt:deactivate_move": {
-      "remove": {
-        "component_groups": [
-          "cyd:target_near_mod",
-          "cyd:move"
-        ]
-      },
-      "add": {
-        "component_groups": [
-          "cyd:no_move"
-        ]
-      }
-    },
-    "evt:normal": {
+      "evt:activate_move": {
         "add": {
-            "component_groups": [
-                "cyd:normal"
-            ]
+          "component_groups": [
+            "cyd:target_near_mod",
+            "cyd:move"
+          ]
         },
         "remove": {
-            "component_groups": [
-                "cyd:shrunk",
-                "cyd:mv_2"
-            ]
+          "component_groups": [
+            "cyd:no_move"
+          ]
         }
-    },
+      },
+      "evt:deactivate_move": {
+        "remove": {
+          "component_groups": [
+            "cyd:target_near_mod",
+            "cyd:move"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "cyd:no_move"
+          ]
+        }
+      },
+      "evt:normal": {
+        "add": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:shrunk",
+            "cyd:mv_2"
+          ]
+        }
+      },
       "evt:cheese": {
         "add": {
           "component_groups": [

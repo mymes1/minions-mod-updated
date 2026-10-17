@@ -1,4 +1,4 @@
-execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s
+execute as @a at @s run playsound cyd.generic.cutscene_photo_sound @s
 tp @a -211 31 1842 facing -218 31 1842
 
 playanimation @e[type=cyd:kun_master_chow] bow

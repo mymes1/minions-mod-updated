@@ -211,7 +211,7 @@
         "default": {
           "transitions": [
             {
-              "chi": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+              "chi": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ]
         },
@@ -221,7 +221,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ]
         }
@@ -232,7 +232,7 @@
         "default": {
           "transitions": [
             {
-              "swing": "query.get_equipped_item_name(0) == 'chi_nunchuk' && variable.attack_time > 0.0f"
+              "swing": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk') && variable.attack_time > 0.0f"
             }
           ]
         },
@@ -253,7 +253,7 @@
         "default": {
           "transitions": [
             {
-              "swing": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+              "swing": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ]
         },
@@ -266,7 +266,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ]
         }

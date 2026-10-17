@@ -1,19 +1,19 @@
-execute @s[tag=check_0,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_0]
-execute @s[tag=check_1,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_1]
-execute @s[tag=check_2,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_2]
-execute @s[tag=check_3,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_3]
-execute @s[tag=check_4,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_4]
-execute @s[tag=check_5,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_5]
-execute @s[tag=check_6,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_6]
-execute @s[tag=check_7,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_7]
-execute @s[tag=check_8,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_8]
-execute @s[tag=check_9,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_9]
-execute @s[tag=check_10,tag=moon,tag=!dance] ~ ~ ~ tp @a @e[type=cyd:moon_spawns,tag=check_10]
-execute @s[tag=check_3,tag=moon,tag=dance] ~ ~ ~ tp @s 7 30 1961
-execute @s[tag=check_3,tag=moon,tag=dance] ~ ~ ~ effect @e[type=cyd:bratt_boss] instant_health 1 255 true
-execute @s[tag=moon] ~ ~ ~ tellraw @a {"rawtext":[{"translate":"wk.fail"}]}
-execute @s[tag=moon] ~ ~ ~ playsound cyd.world.vnc_dialogue @a
-execute @s[tag=moon] ~ ~ ~ playsound cyd.mission.sticky.mission_failed @a
+execute as @s[tag=check_0,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_0]
+execute as @s[tag=check_1,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_1]
+execute as @s[tag=check_2,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_2]
+execute as @s[tag=check_3,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_3]
+execute as @s[tag=check_4,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_4]
+execute as @s[tag=check_5,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_5]
+execute as @s[tag=check_6,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_6]
+execute as @s[tag=check_7,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_7]
+execute as @s[tag=check_8,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_8]
+execute as @s[tag=check_9,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_9]
+execute as @s[tag=check_10,tag=moon,tag=!dance] at @s run tp @a @e[type=cyd:moon_spawns,tag=check_10]
+execute as @s[tag=check_3,tag=moon,tag=dance] at @s run tp @s 7 30 1961
+execute as @s[tag=check_3,tag=moon,tag=dance] at @s run effect @e[type=cyd:bratt_boss] instant_health 1 255 true
+execute as @s[tag=moon] at @s run tellraw @a {"rawtext":[{"translate":"wk.fail"}]}
+execute as @s[tag=moon] at @s run playsound cyd.world.vnc_dialogue @a
+execute as @s[tag=moon] at @s run playsound cyd.mission.sticky.mission_failed @a
 effect @s instant_health 1 255 true
 event entity @s evt:mv_0
 #event entity @e[type=cyd:bratt_boss] evt:sid_0

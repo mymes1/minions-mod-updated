@@ -14,7 +14,7 @@
       "animations": {
         "death": "animation.kunfu.text.death.normal"
       }
-},
+    },
     "component_groups": {},
     "components": {
       "minecraft:collision_box": {
@@ -23,7 +23,9 @@
       },
       "minecraft:physics": {},
       "minecraft:type_family": {
-        "family": "questnpc"
+        "family": [
+          "questnpc"
+        ]
       },
       "minecraft:health": {
         "value": 20,
@@ -34,12 +36,14 @@
         "suffocateTime": 0
       },
       "minecraft:nameable": {},
-      "minecraft:damage_sensor": [
-        {
-          "on_damage": {},
-          "deals_damage": false
-        }
-      ],
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {},
+            "deals_damage": false
+          }
+        ]
+      },
       "minecraft:movement": {
         "value": 1
       },

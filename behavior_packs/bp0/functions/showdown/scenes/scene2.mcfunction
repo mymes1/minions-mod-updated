@@ -5,6 +5,6 @@ effect @a invisibility 6 10 true
 effect @a slowness 5 5 true
 effect @a blindness 1 1 true
 tp @a -193 94 1802 facing -200 95 1802
-execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s
+execute as @a at @s run playsound cyd.generic.scene_transition @s
 playanimation @e[type=cyd:showdown_jean_cutscene,c=1] stop
 playanimation @e[type=cyd:showdown_jean_cutscene,c=1] intro

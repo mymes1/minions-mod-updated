@@ -9,7 +9,7 @@ effect @a invisibility 47 10 true
 effect @a slowness 47 5 true
 effect @a blindness 1 1 true
 tp @a -191 94 1799 facing -201 95 1799
-execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s
+execute as @a at @s run playsound cyd.generic.scene_transition @s
 
 effect @e[family=showdown_cutscene] invisibility 1 255 true
 

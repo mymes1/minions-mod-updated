@@ -1,1 +1,1 @@
-execute @s ~ ~ ~ fill ~-15 ~-3 ~-15 ~15 ~-1 ~15 honey_block 0 replace hay_block
+execute as @s at @s run fill ~-15 ~-3 ~-15 ~15 ~-1 ~15 honey_block [] replace hay_block

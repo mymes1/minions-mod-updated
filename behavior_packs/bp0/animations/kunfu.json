@@ -4,9 +4,9 @@
     "animation.kunfu.text.startmission": {
       "loop": true,
       "timeline": {
-        "0.0": "/execute @p[r=2,tag=!startedkun,tag=kunintrotext,tag=kunintrotext2,tag=!dev,tag=completedchase,tag=!stillreading] ~ ~ ~ function missions/dialogue/kun/start",
-        "0.1": "/execute @a[r=3,tag=!startedkun,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ function missions/dialogue/kun/notstarted",
-        "0.2": "/execute @p[r=15] ~ ~ ~ execute @e[type=cyd:kun_master_chow_start,c=1,tag=!nobubble] ~ ~ ~ particle cyd:chatbubble ~ ~2.2 ~"
+        "0.0": "/execute as @p[r=2,tag=!startedkun,tag=kunintrotext,tag=kunintrotext2,tag=!dev,tag=completedchase,tag=!stillreading] at @s run function missions/dialogue/kun/start",
+        "0.1": "/execute as @a[r=3,tag=!startedkun,tag=!kunintrotext,tag=!dev,tag=completedchase] at @s run function missions/dialogue/kun/notstarted",
+        "0.2": "/execute as @p[r=15] at @s as @e[type=cyd:kun_master_chow_start,c=1,tag=!nobubble] at @s run particle cyd:chatbubble ~ ~2.2 ~"
       },
       "animation_length": 1
     },
@@ -26,8 +26,8 @@
       "loop": true,
       "timeline": {
         "0.0": [
-          "/execute @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ summon cyd:kun_intro ~ ~ ~",
-          "/execute @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ tag @a add kunintrotext"
+          "/execute as @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] at @s run summon cyd:kun_intro ~ ~ ~",
+          "/execute as @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] at @s run tag @a add kunintrotext"
         ]
       },
       "animation_length": 1
@@ -35,12 +35,12 @@
     "animation.kunfu.text.scene1": {
       "loop": false,
       "timeline": {
-        "0.4": "/title @a title §2",
+        "0.4": "/title @a title \u00a72",
         "0.5": "/function missions/dialogue/kun/scene1p1",
         "5": "/function missions/dialogue/kun/scene1p2",
         "10": "/function missions/dialogue/kun/scene1p3teleport",
         "15": "/function missions/dialogue/kun/scene1p4teleport",
-        "15.1": "/title @a title §1"
+        "15.1": "/title @a title \u00a71"
       },
       "animation_length": 16
     },
@@ -68,13 +68,13 @@
     "animation.kunfu.text.scene4": {
       "loop": false,
       "timeline": {
-        "0.5": "/title @a title §2",
+        "0.5": "/title @a title \u00a72",
         "1.0": "/function missions/dialogue/kun/scene4p1",
         "5": "/function missions/dialogue/kun/scene4p2",
         "9": "/function missions/dialogue/kun/scene4p3",
         "13": "/function missions/dialogue/kun/scene4p4",
         "17": "/function missions/dialogue/kun/scene4p5",
-        "17.1": "/title @a title §1"
+        "17.1": "/title @a title \u00a71"
       },
       "animation_length": 18
     },
@@ -85,31 +85,24 @@
         "8": "/function missions/dialogue/kun/scene5p2",
         "12": "/function missions/dialogue/kun/scene5p3",
         "18": "/function missions/dialogue/kun/scene5p4",
-        "21": "/execute @p[tag=!sandbox] ~ ~ ~ execute @e[type=cyd:kun_master_chow] ~ ~ ~ summon cyd:post_m3_dialogue"
+        "21": "/execute as @p[tag=!sandbox] at @s as @e[type=cyd:kun_master_chow] at @s run summon cyd:post_m3_dialogue"
       },
       "animation_length": 22
     },
-
-
-
-
     "animation.kunfu.text.death.normal": {
       "loop": false,
       "timeline": {
-        "0.0": "/execute @a[tag=!msgdeath] ~ ~ ~ function missions/dialogue/kun/normaldeath"
+        "0.0": "/execute as @a[tag=!msgdeath] at @s run function missions/dialogue/kun/normaldeath"
       },
       "animation_length": 1
     },
     "animation.kunfu.text.death.super": {
       "loop": false,
       "timeline": {
-        "0.0": "/execute @a[tag=!msgdeath] ~ ~ ~ function missions/dialogue/kun/superdeath"
+        "0.0": "/execute as @a[tag=!msgdeath] at @s run function missions/dialogue/kun/superdeath"
       },
       "animation_length": 1
     },
-
-
-    
     "animation.kunfu.chibuild": {
       "loop": true,
       "timeline": {
@@ -155,32 +148,32 @@
     "animation.kunfu.player_boost_forward": {
       "loop": false,
       "timeline": {
-        "0.0": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.02": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ playsound cyd.gadget.chi.dash @a[r=5]",
-        "0.01": "/execute @s[scores={kuncharge=6..}] ~ ~ ~ function missions/kunfu/knockback",
-        "0.1": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.11": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.12": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.13": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.14": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.15": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.16": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.17": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.18": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.19": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.20": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.21": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.22": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.23": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.24": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.25": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.26": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.27": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.28": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.29": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.30": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.31": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
-        "0.32": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
+        "0.0": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.02": "/execute as @s[scores={kuncharge=..5}] at @s run playsound cyd.gadget.chi.dash @a[r=5]",
+        "0.01": "/execute as @s[scores={kuncharge=6..}] at @s run function missions/kunfu/knockback",
+        "0.1": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.11": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.12": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.13": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.14": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.15": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.16": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.17": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.18": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.19": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.20": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.21": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.22": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.23": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.24": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.25": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.26": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.27": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.28": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.29": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.30": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.31": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
+        "0.32": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
         "0.33": "/tag @s remove roar",
         "0.34": "/clear @s[tag=!player1] cyd:chi_nunchuk 0 1",
         "0.43": "/give @s[tag=!player1] cyd:chi_nunchuk 1"

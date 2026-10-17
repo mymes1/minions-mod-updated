@@ -6,31 +6,31 @@
         "default": {
           "transitions": [
             {
-              "sticky": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'slingshot'"
+              "sticky": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot')"
             },
             {
-              "fartgrenade": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'fartgrenade'"
+              "fartgrenade": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')"
             },
             {
-              "cheesegun": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'cheesegun'"
+              "cheesegun": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun')"
             },
             {
-              "chi_nunchuk": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+              "chi_nunchuk": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             },
             {
-              "shrinkray": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'shrinkray'"
+              "shrinkray": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray')"
             },
             {
-              "clipboard_objective": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'clipboard_objective'"
+              "clipboard_objective": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             },
             {
-              "rader": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'rader'"
+              "rader": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:rader')"
             },
             {
-              "holo_map": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'holo_map'"
+              "holo_map": "query.is_using_item && query.is_powered != 1 && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             },
             {
-              "bat": "query.get_equipped_item_name(0) == 'bat'"
+              "bat": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             }
           ]
         },
@@ -56,7 +56,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'bat'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             }
           ]
         },
@@ -137,10 +137,10 @@
           ],
           "transitions": [
             {
-              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+              "clipboard_objective": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             },
             {
-              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             }
           ]
         },
@@ -165,52 +165,52 @@
         "default": {
           "transitions": [
             {
-              "sticky_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && variable.is_first_person == 1"
+              "sticky_fp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot') && variable.is_first_person == 1"
             },
             {
-              "fartgrenade_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && variable.is_first_person == 1"
+              "fartgrenade_fp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade') && variable.is_first_person == 1"
             },
             {
-              "cheesegun_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && variable.is_first_person == 1"
+              "cheesegun_fp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && variable.is_first_person == 1"
             },
             {
-              "chi_nunchuk": "query.is_using_item && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+              "chi_nunchuk": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             },
             {
-              "shrinkray_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && variable.is_first_person == 1"
+              "shrinkray_fp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray') && variable.is_first_person == 1"
             },
             {
-              "sticky_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id != 1 && variable.is_first_person == 0"
+              "sticky_tp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot') && query.skin_id != 1 && variable.is_first_person == 0"
             },
             {
-              "fartgrenade_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && query.skin_id != 1 && variable.is_first_person == 0"
+              "fartgrenade_tp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade') && query.skin_id != 1 && variable.is_first_person == 0"
             },
             {
-              "cheesegun_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id != 1 && variable.is_first_person == 0"
+              "cheesegun_tp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && query.skin_id != 1 && variable.is_first_person == 0"
             },
             {
-              "shrinkray_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id != 1 && variable.is_first_person == 0"
+              "shrinkray_tp_notmin": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray') && query.skin_id != 1 && variable.is_first_person == 0"
             },
             {
-              "sticky_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id == 1 && variable.is_first_person == 0"
+              "sticky_tp_min": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot') && query.skin_id == 1 && variable.is_first_person == 0"
             },
             {
-              "fartgrenade_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && query.skin_id == 1 && variable.is_first_person == 0"
+              "fartgrenade_tp_min": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade') && query.skin_id == 1 && variable.is_first_person == 0"
             },
             {
-              "cheesegun_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id == 1 && variable.is_first_person == 0"
+              "cheesegun_tp_min": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun') && query.skin_id == 1 && variable.is_first_person == 0"
             },
             {
-              "shrinkray_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id == 1 && variable.is_first_person == 0"
+              "shrinkray_tp_min": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray') && query.skin_id == 1 && variable.is_first_person == 0"
             },
             {
-              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+              "clipboard_objective": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             },
             {
-              "holo_map": "query.is_using_item && query.get_equipped_item_name(0) == 'holo_map'"
+              "holo_map": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             },
             {
-              "bat": "query.get_equipped_item_name(0) == 'bat'"
+              "bat": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             }
           ]
         },
@@ -223,7 +223,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'bat'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             }
           ]
         },
@@ -251,10 +251,10 @@
           ],
           "transitions": [
             {
-              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+              "clipboard_objective": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             },
             {
-              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             }
           ]
         },
@@ -435,34 +435,34 @@
         "default": {
           "transitions": [
             {
-              "sticky": "query.get_equipped_item_name(0) == 'slingshot'"
+              "sticky": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot')"
             },
             {
-              "fartgrenade": "query.get_equipped_item_name(0) == 'fartgrenade'"
+              "fartgrenade": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')"
             },
             {
-              "cheesegun": "query.get_equipped_item_name(0) == 'cheesegun'"
+              "cheesegun": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun')"
             },
             {
-              "chi_nunchuk": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+              "chi_nunchuk": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             },
             {
-              "holo_map": "query.get_equipped_item_name(0) == 'holo_map'"
+              "holo_map": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             },
             {
-              "shrinkray": "query.get_equipped_item_name(0) == 'shrinkray'"
+              "shrinkray": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray')"
             },
             {
-              "bat": "query.get_equipped_item_name(0) == 'bat'"
+              "bat": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             },
             {
-              "holding_clipboard_objective": "query.get_equipped_item_name(0) == 'clipboard_objective'"
+              "holding_clipboard_objective": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             },
             {
-              "jelly": "query.get_equipped_item_name(0) == 'jamgun'"
+              "jelly": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun')"
             },
             {
-              "plasma_jelly": "query.get_equipped_item_name(0) == 'plasma_jamgun'"
+              "plasma_jelly": "query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun')"
             }
           ]
         },
@@ -472,7 +472,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'slingshot'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:slingshot')"
             }
           ]
         },
@@ -482,7 +482,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'jamgun'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun')"
             }
           ]
         },
@@ -492,7 +492,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun')"
             }
           ]
         },
@@ -502,7 +502,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'bat'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:bat')"
             }
           ]
         },
@@ -512,7 +512,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'shrinkray'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:shrinkray')"
             }
           ]
         },
@@ -522,7 +522,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'holo_map'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:holo_map')"
             }
           ]
         },
@@ -532,7 +532,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:chi_nunchuk')"
             }
           ]
         },
@@ -542,7 +542,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'fartgrenade'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:fartgrenade')"
             }
           ]
         },
@@ -552,7 +552,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'cheesegun'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:cheesegun')"
             }
           ]
         },
@@ -562,7 +562,7 @@
           ],
           "transitions": [
             {
-              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+              "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:clipboard_objective')"
             }
           ]
         }
@@ -573,10 +573,10 @@
         "default": {
           "transitions": [
             {
-              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+              "jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && !query.is_ignited"
             },
             {
-              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+              "plasma_jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && !query.is_ignited"
             }
           ]
         },
@@ -586,10 +586,10 @@
           ],
           "transitions": [
             {
-              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+              "jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && !query.is_ignited"
             },
             {
-              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+              "plasma_jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && !query.is_ignited"
             }
           ]
         },
@@ -599,10 +599,10 @@
           ],
           "transitions": [
             {
-              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+              "jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:jamgun') && !query.is_ignited"
             },
             {
-              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+              "plasma_jamgun": "query.is_using_item && query.is_item_name_any('slot.weapon.mainhand', 0, 'cyd:plasma_jamgun') && !query.is_ignited"
             }
           ]
         },
@@ -769,7 +769,7 @@
         },
         "sticky": {
           "on_entry": [
-            "/execute @e[family=cheese,c=1,r=5,tag=!cheese] ~ ~ ~ tag @s add cheese"
+            "/execute as @e[family=cheese,c=1,r=5,tag=!cheese] at @s run tag @s add cheese"
           ]
         }
       }
@@ -778,7 +778,7 @@
       "states": {
         "default": {
           "on_entry": [
-            "/execute @e[family=cheese,c=1,r=3,tag=!cheese] ~ ~ ~ tag @s add cheese"
+            "/execute as @e[family=cheese,c=1,r=3,tag=!cheese] at @s run tag @s add cheese"
           ]
         }
       }

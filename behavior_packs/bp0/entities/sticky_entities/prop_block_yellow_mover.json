@@ -22,8 +22,8 @@
       }
     },
     "component_groups": {
-      "cyd:despawn":{
-          "minecraft:instant_despawn":{}
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
       },
       "cyd:sid_1": {
         "minecraft:skin_id": {
@@ -36,8 +36,9 @@
         }
       },
       "cyd:ignited": {
-          "minecraft:is_ignited": {}
-      }
+        "minecraft:is_ignited": {}
+      },
+      "cyd:sid_0": {}
     },
     "components": {
       "minecraft:fire_immune": true,
@@ -190,12 +191,12 @@
       }
     },
     "events": {
-      "evt:despawn":{
-          "add":{
-              "component_groups":[
-                  "cyd:despawn"
-              ]
-          }
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
       },
       "evt:sid_1": {
         "add": {

@@ -1,2 +1,2 @@
 titleraw @a actionbar {"rawtext":[{"translate":"mission.transform.player"}]}
-execute @a ~ ~ ~ playsound cyd.mission.objective @s
+execute as @a at @s run playsound cyd.mission.objective @s

@@ -26,7 +26,9 @@
       },
       "minecraft:physics": {},
       "minecraft:type_family": {
-        "family": "questnpc"
+        "family": [
+          "questnpc"
+        ]
       },
       "minecraft:health": {
         "value": 20,
@@ -37,12 +39,14 @@
         "suffocateTime": 0
       },
       "minecraft:nameable": {},
-      "minecraft:damage_sensor": [
-        {
-          "on_damage": {},
-          "deals_damage": false
-        }
-      ],
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {},
+            "deals_damage": false
+          }
+        ]
+      },
       "minecraft:scale": {
         "value": 1.5
       },

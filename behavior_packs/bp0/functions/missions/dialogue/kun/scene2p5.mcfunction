@@ -1,5 +1,5 @@
 titleraw @a actionbar {"rawtext":[{"translate":"dojo.cutscene2.5"}]}
-execute @e[type=cyd:kun_master_chow] ~ ~ ~ playanimation @s talk1
+execute as @e[type=cyd:kun_master_chow] at @s run playanimation @s talk1
 
 
 tag @a add speedenable

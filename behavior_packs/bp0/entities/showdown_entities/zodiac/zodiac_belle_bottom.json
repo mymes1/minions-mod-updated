@@ -231,7 +231,8 @@
             "event": "evt:special_forced"
           }
         }
-      }
+      },
+      "cyd:noturn": {}
     },
     "components": {
       "minecraft:damage_sensor": {
