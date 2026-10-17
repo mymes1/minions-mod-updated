@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_belle_bottom_zodiac",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/zodiac/belle_zodiac",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.belle_zodiac",
+        "cheesed": "geometry.showdown_belle_bottom_cheesed"
+      },
+      "particle_effects": {
+        "flaming": "cyd:fire_chain",
+        "flaming2": "cyd:fire_chain2"
+      },
+      "sound_effects": {
+        "belle_bottom_chain_twirl": "cyd.mission.showdown.new.belle.belle_bottom_chain_twirl",
+        "belle_zodiac_attack1": "cyd.mission.showdown.new.belle.belle_zodiac_attack1",
+        "belle_zodiac_attack2": "cyd.mission.showdown.new.belle.belle_zodiac_attack2",
+        "belle_zodiac_flamebuff": "cyd.mission.showdown.new.belle.belle_zodiac_flamebuff",
+        "zodiac_transform": "cyd.mission.showdown.new.zodiac_transform",
+        
+
+        "attack1": "cyd.mission.showdown.belle.attack",
+        "attack2": "cyd.mission.showdown.belle.flame",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat",
+        "bellespin": "cyd.mission.showdown.belle.twirl"
+      },
+      "animations": {
+        "transform": "animation.belle_zodiac.transform",
+        "breath": "animation.belle_zodiac.breath",
+        "idle": "animation.belle_zodiac.idle",
+        "walk": "animation.belle_zodiac.walk",
+        "attack1": "animation.belle_zodiac.attack1",
+        "attack2": "animation.belle_zodiac.attack2",
+        "flame": "animation.belle_zodiac.flame_buff",
+        "flamepat": "animation.belle_zodiac.flame_particles",
+        "stun": "animation.belle_zodiac.stunned",
+        "bind": "animation.belle_zodiac.bind",
+        "defeated": "animation.belle_zodiac.defeated",
+        "intro": "animation.belle_zodiac.intro",
+        "outro": "animation.belle_zodiac.outro",
+        "mission_intro": "animation.belle_zodiac.mission_intro",
+        "ctrl": "controller.animation.showdown.belle",
+        "walk_ctrl": "controller.animation.showdown.bellemovement",
+        "flame_ctrl": "controller.animation.showdown.fire",
+        "spin": "animation.belle_zodiac.spin"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "walk_ctrl",
+          "flame_ctrl",
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_nunchuk_zodiac",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/zodiac/nunchuck_zodiac",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.nunchuck_zodiac",
+        "cheesed": "geometry.showdown_nunchuck_cheesed"
+      },
+      "sound_effects": {
+        "nunchuck_zodiac_attack12": "cyd.mission.showdown.new.nun.nunchuck_zodiac_attack12",
+        "zodiac_transform": "cyd.mission.showdown.new.zodiac_transform",
+
+        "attack1": "cyd.mission.showdown.nun.attack",
+        "attack2": "cyd.mission.showdown.nun.flurry",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "transform": "animation.nunchuck_zodiac.transform",
+        "breath": "animation.nunchuck_zodiac.breath",
+        "idle": "animation.nunchuck_zodiac.idle",
+        "walk": "animation.nunchuck_zodiac.walk",
+        "attack1": "animation.nunchuck_zodiac.attack1",
+        "attack2": "animation.nunchuck_zodiac.attack2",
+        "special": "animation.nunchuck_zodiac.flurry",
+        "cheesed": "animation.nunchuck_zodiac.cheesed",
+        "defeated": "animation.nunchuck_zodiac.defeated",
+        "intro": "animation.nunchuck_zodiac.intro",
+        "outro": "animation.nunchuck_zodiac.outro",
+        "mission_intro": "animation.nunchuck_zodiac.mission_intro",
+        "ctrl": "controller.animation.showdown.nun",
+        "walk_ctrl": "controller.animation.showdownnun.movement"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "walk_ctrl",
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}

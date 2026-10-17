@@ -1,0 +1,59 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_jean_clawed_zodiac",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/zodiac/jeanclawed_zodiac",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.jeanclawed_zodiac",
+        "cheesed": "geometry.showdown_jean_clawed_cheesed"
+      },
+      "sound_effects": {
+        "jeanclawed_zodiac_attack1": "cyd.mission.showdown.new.jean.JeanClawed_Zodiac_Attack1",
+        "jeanclawed_zodiac_attack2": "cyd.mission.showdown.new.jean.JeanClawed_Zodiac_Attack2",
+        "jean_clawed_attack": "cyd.mission.showdown.jean.attack1",
+        "zodiac_transform": "cyd.mission.showdown.new.zodiac_transform",
+
+        "idle": "cyd.mission.showdown.jean.intro",
+        "attack1": "cyd.mission.showdown.jean.attack1",
+        "attack2": "cyd.mission.showdown.jean.attack2",
+        "intro": "cyd.mission.showdown.jean.intro",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "transform": "animation.jeanclawed_zodiac.transform",
+        "breath": "animation.jeanclawed_zodiac.breath",
+        "idle": "animation.jeanclawed_zodiac.idle",
+        "walk": "animation.jeanclawed_zodiac.walk",
+        "attack1": "animation.jeanclawed_zodiac.attack1",
+        "attack2": "animation.jeanclawed_zodiac.attack2",
+        "leap": "animation.jeanclawed_zodiac.leap",
+        "pulled": "animation.jeanclawed_zodiac.pulled",
+        "defeated": "animation.jeanclawed_zodiac.defeated",
+        "intro": "animation.jeanclawed_zodiac.intro",
+        "outro": "animation.jeanclawed_zodiac.outro",
+        "mission_intro": "animation.jeanclawed_zodiac.mission_intro",
+        "ctrl": "controller.animation.showdown.jean",
+        "walk_ctrl": "controller.animation.showdown.movement"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "walk_ctrl",
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_svengeance_zodiac",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/zodiac/sven_zodiac",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.sven_zodiac",
+        "cheesed": "geometry.showdown_svengeance_cheesed"
+      },
+      "sound_effects": {
+        "sven_zodiac_attack1": "cyd.mission.showdown.new.sven.Sven_Zodiac_Attack1",
+        "sven_zodiac_attack2": "cyd.mission.showdown.new.sven.Sven_Zodiac_Attack2",
+        "sven_zodiac_twister": "cyd.mission.showdown.new.sven.Sven_Zodiac_Twister",
+        "zodiac_transform": "cyd.mission.showdown.new.zodiac_transform",
+
+        "attack1": "cyd.mission.showdown.sven.attack",
+        "twister": "cyd.mission.showdown.sven.twister",
+        "walk": "cyd.mission.showdown.sven.walk",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "transform": "animation.sven_zodiac.transform",
+        "breath": "animation.sven_zodiac.breath",
+        "idle": "animation.sven_zodiac.idle",
+        "walk": "animation.sven_zodiac.walk",
+        "attack1": "animation.sven_zodiac.attack1",
+        "attack2": "animation.sven_zodiac.attack2",
+        "special": "animation.sven_zodiac.twister",
+        "farted": "animation.sven_zodiac.fart_bombed",
+        "defeated": "animation.sven_zodiac.defeated",
+        "intro": "animation.sven_zodiac.intro",
+        "outro": "animation.sven_zodiac.outro",
+        "mission_intro": "animation.sven_zodiac.mision_intro",
+        "ctrl": "controller.animation.showdown.sven",
+        "walk_ctrl": "controller.animation.showdownnun.movement"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "walk_ctrl",
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}
