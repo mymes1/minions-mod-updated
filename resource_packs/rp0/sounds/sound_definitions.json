@@ -1,6 +1,16 @@
 {
   "format_version": "1.14.0",
-  
+  "sound_definitions": {
+    "random.eat": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "sounds": []
+    },
+    "random.burp": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "sounds": []
+    },
     "cyd.gadget.fart.impact": {
       "category": "ambient",
       "sounds": [
