@@ -175,8 +175,7 @@
         "0.31": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
         "0.32": "/execute as @s[scores={kuncharge=..5}] at @s run function missions/kunfu/playerforward",
         "0.33": "/tag @s remove roar",
-        "0.34": "/clear @s[tag=!player1] cyd:chi_nunchuk 0 1",
-        "0.43": "/give @s[tag=!player1] cyd:chi_nunchuk 1"
+        "0.34": ["/clear @s[tag=!player1] cyd:chi_nunchuk 0 1", "/give @s[tag=!player1] cyd:chi_nunchuk 1"]
       },
       "animation_length": 2
     }

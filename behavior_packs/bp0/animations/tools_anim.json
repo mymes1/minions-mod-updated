@@ -8,12 +8,11 @@
           "@s evt:sticky",
           "@s evt:cooldown",
           "/stopsound @a random.eat",
+          "/stopsound @a random.burp",
           "/playsound cyd.gadget.sticky.throw @a[r=5]"
         ],
         "2.0": [
-          "/clear @s[tag=!player1] cyd:slingshot 0 1"
-        ],
-        "2.09": [
+          "/clear @s[tag=!player1] cyd:slingshot 0 1",
           "/give @s[tag=!player1] cyd:slingshot 1"
         ]
       },
@@ -26,12 +25,11 @@
           "@s evt:shrink",
           "@s evt:cooldown",
           "/stopsound @a random.eat",
+          "/stopsound @a random.burp",
           "/playsound cyd.gadget.shrink.shoot @a[r=5]"
         ],
         "2.0": [
-          "/clear @s[tag=!player1] cyd:shrinkray 0 1"
-        ],
-        "2.09": [
+          "/clear @s[tag=!player1] cyd:shrinkray 0 1",
           "/give @s[tag=!player1] cyd:shrinkray 1"
         ]
       },
@@ -44,12 +42,11 @@
           "@s evt:timer",
           "@s evt:cooldown",
           "/stopsound @a random.eat",
+          "/stopsound @a random.burp",
           "/playsound cyd.gadget.fart.throw @a[r=5]"
         ],
         "2.0": [
-          "/clear @s[tag=!player1] cyd:fartgrenade 0 1"
-        ],
-        "2.09": [
+          "/clear @s[tag=!player1] cyd:fartgrenade 0 1",
           "/give @s[tag=!player1] cyd:fartgrenade 1"
         ]
       },
@@ -62,12 +59,11 @@
           "@s evt:cheese",
           "@s evt:cooldown",
           "/stopsound @a random.eat",
+          "/stopsound @a random.burp",
           "/playsound cyd.gadget.cheese.shoot @a[r=5]"
         ],
         "1.0": [
-          "/clear @s[tag=!player1] cyd:cheesegun 0 1"
-        ],
-        "1.09": [
+          "/clear @s[tag=!player1] cyd:cheesegun 0 1",
           "/give @s[tag=!player1] cyd:cheesegun 1"
         ]
       },
@@ -80,10 +76,9 @@
           "/tag @s add objective",
           "/playsound cyd.mission.objective @s",
           "/stopsound @a random.eat",
+          "/stopsound @a random.burp",
           "/function playerbase/objectives/objective_system",
-          "/clear @s[tag=!player1] cyd:clipboard_objective 0 1"
-        ],
-        "0.1": [
+          "/clear @s[tag=!player1] cyd:clipboard_objective 0 1",
           "/give @s[tag=!player1] cyd:clipboard_objective 1"
         ],
         "1.0": [
@@ -117,10 +112,8 @@
       "loop": false,
       "timeline": {
         "0.0": [
-          "/clear @s[tag=!player1] cyd:chi_nunchuk 0 1"
-        ],
-        "0.1": [
-          "/give @s[tag=!player1] cyd:chi_nunchuk 1"
+          "/stopsound @a random.eat",
+          "/stopsound @a random.burp"
         ]
       },
       "animation_length": 0.25
