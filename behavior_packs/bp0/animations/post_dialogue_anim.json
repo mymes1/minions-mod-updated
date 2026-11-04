@@ -185,7 +185,6 @@
         "14.0": [
           "/tag @e[type=cyd:young_nefario] remove talk",
           "/tag @e[type=cyd:young_nefario] remove keyed",
-          "/summon cyd:trigger_sticky -19 80 1736",
           "/event entity @s evt:despawn"
         ]
       },

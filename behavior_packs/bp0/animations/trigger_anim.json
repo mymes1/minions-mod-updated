@@ -641,6 +641,9 @@
     "animation.trigger.system.start_sticky": {
       "loop": false,
       "timeline": {
+        "0.0": [
+          "/execute if entity @a[tag=completedstk] run event entity @s evt:despawn"
+        ],
         "0.1": [
           "/tickingarea add -24 0 1736 -24 0 1736 recordshop",
           "/tickingarea add -118 45 2038 -118 45 2038 temp_sticky2",
