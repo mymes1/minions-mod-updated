@@ -75,6 +75,12 @@
                             "subject": "other",
                             "operator": "not",
                             "value": "dev"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "other",
+                            "operator": "not",
+                            "value": "completedstk"
                         }
                     ]
                 },
