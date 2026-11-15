@@ -40,10 +40,12 @@
           "/scoreboard players set @e[type=cyd:system_storage] m4 0",
           "/function playerbase/objectives/m4_p1",
           "/function playerbase/villain_points_m4",
-          "/tag @e[type=cyd:collectible_storage] add trophy_mona"
+          "/tag @e[type=cyd:collectible_storage] add trophy_mona",
+          "/tickingarea add -184 88 1782 -184 88 1782 showdown_start"
         ],
         "4.0": [
-          "/function missions/dialogue/post/post.m4_2"
+          "/function missions/dialogue/post/post.m4_2",
+          "/function showdown/ensure_start"
         ],
         "8.0": [
           "/function missions/dialogue/post/post.m4_3",
@@ -51,6 +53,8 @@
           "/tickingarea remove tempwk"
         ],
         "12.0": [
+          "/function showdown/ensure_start",
+          "/tickingarea remove showdown_start",
           "/event entity @s evt:despawn"
         ]
       },
@@ -171,10 +175,12 @@
           "/function missions/dialogue/post/post.m1_1",
           "/function playerbase/objectives/m1_p",
           "/function playerbase/villain_points_m1",
-          "/tag @e[type=cyd:collectible_storage] add trophy_dragon"
+          "/tag @e[type=cyd:collectible_storage] add trophy_dragon",
+          "/tickingarea add -38 80 1747 -35 80 1747 chase_start"
         ],
         "4.0": [
-          "/function missions/dialogue/post/post.m1_2"
+          "/function missions/dialogue/post/post.m1_2",
+          "/function chase/ensure_start"
         ],
         "8.0": [
           "/function missions/dialogue/post/post.m1_3"
@@ -185,6 +191,8 @@
         "14.0": [
           "/tag @e[type=cyd:young_nefario] remove talk",
           "/tag @e[type=cyd:young_nefario] remove keyed",
+          "/function chase/ensure_start",
+          "/tickingarea remove chase_start",
           "/event entity @s evt:despawn"
         ]
       },
